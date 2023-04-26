@@ -1,2 +1,2 @@
-# rarestem
+# rare-stem
 Final year project
