@@ -20,7 +20,6 @@ public class DatabaseConn {
      * @param uri  the string to call MongoDB Connection String
      *             URI.
      */
-
         // Load environment variables from .env file
         Dotenv dotenv = Dotenv.load();
 
@@ -43,7 +42,7 @@ public class DatabaseConn {
         Document update = new Document("$set", new Document("age", "35"));
         col.updateOne(filter, update);*/
 
-        Document sampleDoc = new Document("_id", "3").append("age", "33");
+        Document sampleDoc = new Document("_id", "33").append("age", "33");
         col.insertOne(sampleDoc);
     }
 }
