@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### .env ###
+!**/src/test/.env
+.env
