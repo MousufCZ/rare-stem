@@ -10,8 +10,5 @@
         <module name="rare-stem" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="rare-stem" target="20" />
-    </bytecodeTargetLevel>
   </component>
 </project>
