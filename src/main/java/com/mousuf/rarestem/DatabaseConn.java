@@ -42,7 +42,7 @@ public class DatabaseConn {
         Document update = new Document("$set", new Document("age", "35"));
         col.updateOne(filter, update);*/
 
-        Document sampleDoc = new Document("_id", "32").append("age", "33");
+        Document sampleDoc = new Document("_id", "8").append("age", "33");
         col.insertOne(sampleDoc);
     }
 }
