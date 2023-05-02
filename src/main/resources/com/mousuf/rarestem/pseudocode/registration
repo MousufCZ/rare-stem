@@ -1,0 +1,30 @@
+// When the user clicks on the register button, the following steps occur:
+
+// Step 1: User enters their name and email
+name = prompt("Enter your name:");
+        email = prompt("Enter your email:");
+
+// Step 2: Create a random 4 digit pin code
+        pin_code = generate_random_pin_code();
+
+// Step 3: Store user information and pin code in MongoDB
+        user_info = {
+        "name": name,
+        "email": email,
+        "pin_code": pin_code
+        };
+        mongoDB.store(user_info);
+
+// Step 4: Send an email to the user with their pin code
+        email.send(email, "Registration successful", "Your pin code is: " + pin_code);
+
+// Step 5: Prompt the user to enter their pin code to access the system
+        input_pin_code = prompt("Enter the pin code sent to your email:");
+
+// Step 6: Check if the pin code is correct
+        if input_pin_code == pin_code:
+        // Allow the user to access the system
+        access_system();
+        else:
+        // Display an error message and prompt the user to try again
+        display_error_message("Invalid pin code. Please try again.");
