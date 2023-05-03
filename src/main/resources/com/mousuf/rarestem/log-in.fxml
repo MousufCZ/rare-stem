@@ -10,37 +10,36 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.LogInController">
    <children>
       <AnchorPane prefHeight="700.0" prefWidth="1280.0">
           <children>
-              <Button fx:id="forgotPasswordBtn" layoutX="579.0" layoutY="421.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Forgot password" underline="true">
+              <Button fx:id="button_forgotPassword" layoutX="579.0" layoutY="421.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Forgot password" underline="true">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-              <PasswordField alignment="CENTER" layoutX="555.0" layoutY="309.0" promptText="Password">
+              <PasswordField fx:id="tf_password" alignment="CENTER" layoutX="555.0" layoutY="309.0" promptText="Password">
                <font>
                   <Font size="14.0" />
                </font>
             </PasswordField>
-              <TextField alignment="CENTER" layoutX="555.0" layoutY="270.0" promptText="Email">
+              <TextField fx:id="tf_email" alignment="CENTER" layoutX="555.0" layoutY="270.0" promptText="Email">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-              <ImageView fitHeight="239.0" fitWidth="239.0" layoutX="521.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+              <ImageView fx:id="imgView_homepageLogo" fitHeight="239.0" fitWidth="239.0" layoutX="521.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                       <Image url="@images/rs-prototype-logo-full.png" />
                   </image>
             </ImageView>
-              <Button fx:id="registerBtn" layoutX="647.0" layoutY="391.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign Up!" textFill="#1224c6">
+              <Button fx:id="button_signUp" layoutX="647.0" layoutY="391.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up!" textFill="#1224c6">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="registerBtn1" layoutX="611.0" layoutY="351.0" mnemonicParsing="false" text="Log In">
+            <Button fx:id="button_logIn" layoutX="611.0" layoutY="351.0" mnemonicParsing="false" text="Log In">
                <font>
                   <Font size="14.0" />
                </font>

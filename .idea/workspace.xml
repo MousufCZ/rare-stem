@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATE: Updated .env&#10;ERR:&#10;- Mousuf C Zaman&#10;- 28-04-23">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mousuf/rarestem/DatabaseConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mousuf/rarestem/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mousuf/rarestem/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,39 +73,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mousuf.rarestem.loggingSys" />
       <recent name="com.mousuf.rarestem" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mousuf.rarestem.Hello" />
       <recent name="com.mousuf.rarestem" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseConn">
-    <configuration name="DatabaseConn (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DatabaseConn" />
-      <module name="rare-stem" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseConn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.DatabaseConn" />
-      <module name="rare-stem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.LoggingView">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.HelloApplication.HelloApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Hello.HelloApplication" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.HelloApplication.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,9 +95,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuickStart" />
+    <configuration name="LoggedInView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.LoggedInView" />
       <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoggingView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.LoggingView" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.SignupView" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,13 +147,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.mousuf.rarestem.Hello.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Hello.HelloApplication" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.Hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DatabaseConn" />
+        <item itemvalue="Application.LoggingView" />
+        <item itemvalue="Application.SignupView" />
+        <item itemvalue="Application.LoggedInView" />
         <item itemvalue="Application.com.mousuf.rarestem.HelloApplication" />
-        <item itemvalue="Application.QuickStart" />
-        <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="Application.DatabaseConn (1)" />
+        <item itemvalue="Application.com.mousuf.rarestem.Hello.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682635486792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22">
+      <created>1683062371395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683062371395</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +266,8 @@
     <MESSAGE value="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22" />
     <MESSAGE value="UPDATED: Environment set up with Maven Dependencies on a JavaFX Project file.&#10;ERR SOLVED: Dependency version control. &#10;- Mousuf C Zaman&#10;- 27-04-22" />
     <MESSAGE value="UPDATED: MongoDB has been set up and connected.&#10;ERR SOLVED: Dependency for MongoDB is correct. &#10;- Mousuf C Zaman&#10;- 27-04-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: MongoDB has been set up and connected.&#10;ERR SOLVED: Dependency for MongoDB is correct. &#10;- Mousuf C Zaman&#10;- 27-04-22" />
+    <MESSAGE value="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

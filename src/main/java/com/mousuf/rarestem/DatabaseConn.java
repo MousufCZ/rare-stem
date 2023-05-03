@@ -1,4 +1,5 @@
 package com.mousuf.rarestem;
+import com.mongodb.client.result.UpdateResult;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.bson.Document;
 import com.mongodb.client.MongoClient;
@@ -42,7 +43,10 @@ public class DatabaseConn {
         Document update = new Document("$set", new Document("age", "35"));
         col.updateOne(filter, update);*/
 
-        Document sampleDoc = new Document("_id", "8").append("age", "33");
+        Document sampleDoc = new Document("_id", "58").append("age", "33");
+        //Document sampleDoc2 = new Document("_id", "8").append("age","33");
         col.insertOne(sampleDoc);
+        //UpdateResult updateResult = col.updateOne(sampleDoc2);
+
     }
 }
