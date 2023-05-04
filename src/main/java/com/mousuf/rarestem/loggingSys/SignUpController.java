@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -54,7 +55,12 @@ public class SignUpController implements Initializable {
         button_login.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                LoggingModel.changeScene(event, "/log-in.fxml", "Log In", null);
+                System.out.println("We are about to run log-in.fxml from SignUpController");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Log In", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
     }

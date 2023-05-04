@@ -19,15 +19,22 @@ import com.mongodb.MongoException;
 import com.mongodb.MongoCredential;
 import com.mongodb.ConnectionString;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class LoggingModel {
-    public static void changeScene(ActionEvent event, String fxmlFile, String title, String email) {
+    /*
+    * Faced location null exception
+    * */
+    public static void changeScene(ActionEvent event, String fxmlFile, String title, String email) throws MalformedURLException {
         Parent root = null;
+        URL url = new File(fxmlFile).toURI().toURL();
+        FXMLLoader loader = new FXMLLoader();
         if (email != null) {
             try {
-                FXMLLoader loader = new FXMLLoader(LoggingModel.class.getResource(fxmlFile));
-                root = loader.load();
+                root = loader.load(url);
                 LoggedInController loggedInController = loader.getController();
                 loggedInController.setUserInformation(email);
             } catch (IOException e) {
@@ -35,7 +42,7 @@ public class LoggingModel {
             }
         } else {
             try {
-                root = FXMLLoader.load(LoggingModel.class.getResource(fxmlFile));
+                root = loader.load(url);
             } catch(IOException e) {
                 e.printStackTrace();
             }
@@ -71,7 +78,7 @@ public class LoggingModel {
             client = MongoClients.create(uri);
             db = client.getDatabase("rs-db");
 
-            MongoCollection<Document> col = db.getCollection("users");
+            MongoCollection<Document> col = db.getCollection("rsdb.users");
             BasicDBObject query = new BasicDBObject();
             query.put("email", email);
             FindIterable<Document> iterable = col.find(query);
@@ -91,7 +98,8 @@ public class LoggingModel {
                         ;
                 col.insertOne(document);
                 System.out.println("User created successfully!");
-                changeScene(event, "logged-in.fxml", "Welcome", email);
+                // Commented out for URI test
+                //changeScene(event, "logged-in.fxml", "Welcome", email);
             }
         } catch(MongoException e){
             e.printStackTrace();

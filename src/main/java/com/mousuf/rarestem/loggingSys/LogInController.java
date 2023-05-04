@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -38,26 +39,12 @@ public class LogInController implements Initializable {
         button_signUp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("We are about to run signup.fxml");
-                /*
-                 * Original code:
-                 * LoggingModel.changeScene(event, "/sign-up.fxml", "Sign Up", null);
-                 * Debugging code to import Scene directly: https://www.youtube.com/watch?v=mokD1I7hl-o&list=PLS1QulWo1RIaUGP446_pWLgTZPiFizEMq&index=11
-                 * */
-
-                Stage primaryStage = new Stage();
-                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sign-up.fxml"));
-                System.out.println("past signup.fxml");
-
-                Scene scene = null;
+                System.out.println("We are about to run signup.fxml from LogInController");
                 try {
-                    scene = new Scene(fxmlLoader.load(), 1280, 700);
-                } catch (IOException e) {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/sign-up.fxml", "Sign Up", null);
+                } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
-                primaryStage.setTitle("Rare Stem Prototype");
-                primaryStage.setScene(scene);
-                primaryStage.show();
             }
         });
 

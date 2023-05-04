@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -35,8 +36,12 @@ public class LoggedInController implements Initializable {
         button_logOut.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                LoggingModel.changeScene(event, "log-in.fxml", "Rare Stem", null);
-
+                System.out.println("We are about to run log-in.fxml from LoggedInController");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
     }
