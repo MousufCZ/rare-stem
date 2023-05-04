@@ -9,7 +9,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class DatabaseConn {
     public static void main( String[] args ) {
-    /**
+    /*
      * Credential protection of MongoDB Connection URI with the
      * use of enviorment viarble file .env, and the use of
      * dotenv-java to recall the config file variable. The reuse

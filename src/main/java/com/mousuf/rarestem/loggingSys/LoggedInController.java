@@ -13,6 +13,10 @@ import java.util.ResourceBundle;
 
 public class LoggedInController implements Initializable {
 
+    /*
+    * This is my code and I built it by learning from Java in Two Semester: Featuring JavaFX (Autor: Quentin Charatan, Kans and Springerlink (Online Service, 2019)
+    * */
+
     @FXML
     private Label label_loggedInName;
     @FXML
@@ -30,13 +34,14 @@ public class LoggedInController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         button_logOut.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent actionEvent) {
+            public void handle(ActionEvent event) {
+                LoggingModel.changeScene(event, "log-in.fxml", "Rare Stem", null);
 
             }
         });
     }
 
-    public void setUserInformation(String username) {
-        label_loggedInName.setText(username);
+    public void setUserInformation(String email) {
+        label_loggedInName.setText(email);
     }
 }

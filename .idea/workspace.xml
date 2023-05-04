@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: LoggedInController.java, logged-in.fxml, LoggedInView edit in motion. &#10;ERR: .&#10;- MCZ&#10;- 02-05-22">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "rare-disease-db",
-    "last_opened_file_path": "C:/Users/mousu/Downloads/demo",
+    "last_opened_file_path": "C:/Users/mousu/Documents/java-projects/rare-stem/src/main/java/com/mousuf/rarestem/loggingSys",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +69,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17106551",
     "project.structure.side.proportion": "0.5790094",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.archetype.catalogs",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "spring.configuration.checksum": "9e9e14d0be7fbec51e837ff2376ccc90",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,18 +79,21 @@
       <recent name="com.mousuf.rarestem.loggingSys" />
       <recent name="com.mousuf.rarestem" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mousu\Documents\java-projects\rare-stem\src\main\java\com\mousuf\rarestem\loggingSys" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.mousuf.rarestem.Hello" />
       <recent name="com.mousuf.rarestem" />
+      <recent name="com.mousuf.rarestem.Hello" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoggingView">
+  <component name="RunManager" selected="Application.com.mousuf.rarestem.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Hello.HelloApplication" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +106,7 @@
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,7 +119,7 @@
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,7 +132,7 @@
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.mousuf.rarestem.HelloApplication" />
+        <item itemvalue="Application.LoggedInView" />
         <item itemvalue="Application.LoggingView" />
         <item itemvalue="Application.SignupView" />
-        <item itemvalue="Application.LoggedInView" />
-        <item itemvalue="Application.com.mousuf.rarestem.HelloApplication" />
         <item itemvalue="Application.com.mousuf.rarestem.Hello.HelloApplication" />
       </list>
     </recent_temporary>
@@ -189,6 +195,8 @@
       <workItem from="1682633865307" duration="944000" />
       <workItem from="1682634840569" duration="1757000" />
       <workItem from="1682672926306" duration="386000" />
+      <workItem from="1683122340838" duration="12337000" />
+      <workItem from="1683191500942" duration="9990000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -218,13 +226,25 @@
       <option name="project" value="LOCAL" />
       <updated>1683062371395</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="UPDATED: LoggedInController.java, logged-in.fxml, LoggedInView edit in motion. &#10;ERR: .&#10;- MCZ&#10;- 02-05-22">
+      <created>1683074860343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683074860343</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="88d0e5b8-1436-4d8a-bd0c-c97cf65bed4c" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -242,6 +262,11 @@
     </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="88d0e5b8-1436-4d8a-bd0c-c97cf65bed4c">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -267,7 +292,60 @@
     <MESSAGE value="UPDATED: Environment set up with Maven Dependencies on a JavaFX Project file.&#10;ERR SOLVED: Dependency version control. &#10;- Mousuf C Zaman&#10;- 27-04-22" />
     <MESSAGE value="UPDATED: MongoDB has been set up and connected.&#10;ERR SOLVED: Dependency for MongoDB is correct. &#10;- Mousuf C Zaman&#10;- 27-04-22" />
     <MESSAGE value="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Created folder and file structure for Logging System. &#10;ERR SOLVED: module-info.java update, fxml controller conenction update.&#10;- MCZ&#10;- 02-05-22" />
+    <MESSAGE value="UPDATED: LoggedInController.java, logged-in.fxml, LoggedInView edit in motion. &#10;ERR: .&#10;- MCZ&#10;- 02-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: LoggedInController.java, logged-in.fxml, LoggedInView edit in motion. &#10;ERR: .&#10;- MCZ&#10;- 02-05-22" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingView.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java</url>
+          <line>24</line>
+          <properties class="com.mousuf.rarestem.loggingSys.LoggingModel" method="changeScene">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java</url>
+          <line>13</line>
+          <properties class="com.mousuf.rarestem.loggingSys.SignupView" method="start">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java</url>
+          <line>12</line>
+          <properties class="com.mousuf.rarestem.HelloApplication" method="start">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SignupView extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sign-up.fxml"));
