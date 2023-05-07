@@ -28,17 +28,7 @@ public class LogInController implements Initializable {
     private TextField tf_email;
     @FXML
     private TextField tf_password;
-    @FXML
-    private TableColumn<?, ?> tc_projectDesc;
 
-    @FXML
-    private TableColumn<?, ?> tc_projectName;
-
-    @FXML
-    private TableColumn<?, ?> tc_projectOwner;
-
-    @FXML
-    private TableColumn<?, ?> tc_projectURL;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         button_logIn.setOnAction(new EventHandler<ActionEvent>() {

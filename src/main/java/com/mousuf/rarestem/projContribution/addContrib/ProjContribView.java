@@ -1,4 +1,4 @@
-package com.mousuf.rarestem.projContribution;
+package com.mousuf.rarestem.projContribution.addContrib;
 
 import com.mousuf.rarestem.HelloApplication;
 import javafx.application.Application;

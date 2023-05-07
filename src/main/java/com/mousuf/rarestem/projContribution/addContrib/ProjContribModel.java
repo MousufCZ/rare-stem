@@ -1,4 +1,4 @@
-package com.mousuf.rarestem.projContribution;
+package com.mousuf.rarestem.projContribution.addContrib;
 
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;

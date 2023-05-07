@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,6 +34,18 @@ public class LoggedInController implements Initializable {
     private Button button_exit;
     @FXML
     private Button button_addProject;
+    // Table
+    @FXML
+    private TableColumn<?, ?> tc_projectDesc;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectName;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectOwner;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectURL;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -54,7 +67,7 @@ public class LoggedInController implements Initializable {
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -66,7 +79,7 @@ public class LoggedInController implements Initializable {
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", email);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -75,11 +88,11 @@ public class LoggedInController implements Initializable {
 
     }
 
-    @Getter @Setter private String email = getEmail();
+/*    @Getter @Setter private String email = getEmail();
     public void setUserInformation(String email) {
         this.email = getEmail();
         System.out.println("CHECK: LoggedInController: running setUserInformaiton");
         label_loggedInName.setText(email);
-    }
+    }*/
 
 }

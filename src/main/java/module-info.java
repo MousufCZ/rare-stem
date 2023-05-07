@@ -14,12 +14,18 @@ module com.mousuf.rarestem {
     opens com.mousuf.rarestem.loggingSys to javafx.fxml;
     exports com.mousuf.rarestem.loggingSys;
 
-    opens com.mousuf.rarestem.projContribution to javafx.fxml;
-    exports com.mousuf.rarestem.projContribution;
+/*    opens com.mousuf.rarestem.projContribution to javafx.fxml;
+    exports com.mousuf.rarestem.projContribution;*/
 
     opens com.mousuf.rarestem.tableViewTest to javafx.fxml;
     exports com.mousuf.rarestem.tableViewTest;
 
     opens com.mousuf.rarestem.tableViewTest.dbTableView to javafx.fxml;
     exports com.mousuf.rarestem.tableViewTest.dbTableView;
+
+    exports com.mousuf.rarestem.projContribution.getContrib;
+    opens com.mousuf.rarestem.projContribution.getContrib to javafx.fxml;
+
+    exports com.mousuf.rarestem.projContribution.addContrib;
+    opens com.mousuf.rarestem.projContribution.addContrib to javafx.fxml;
 }
