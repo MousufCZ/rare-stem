@@ -19,4 +19,7 @@ module com.mousuf.rarestem {
 
     opens com.mousuf.rarestem.tableViewTest to javafx.fxml;
     exports com.mousuf.rarestem.tableViewTest;
+
+    opens com.mousuf.rarestem.tableViewTest.dbTableView to javafx.fxml;
+    exports com.mousuf.rarestem.tableViewTest.dbTableView;
 }
