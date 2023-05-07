@@ -44,12 +44,17 @@ public class GetContribModel {
             String tc_projectDesc = doc.getString("project_description");
             String tc_projectOwner = doc.getString("project_owner");
             String tc_projectURL = doc.getString("projURL");
-
             getContribs.add(new GetContrib(tc_projectName, tc_projectDesc, tc_projectOwner, tc_projectURL));
         }
         return getContribs;
     }
     public void close() {
         client.close();
+    }
+
+    public static void main(String[] args) {
+        GetContribModel obj = new GetContribModel();
+        List<GetContrib> contribs = obj.getAllContribs();
+        contribs.forEach(c -> System.out.println(c));
     }
 }

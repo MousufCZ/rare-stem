@@ -1,4 +1,6 @@
 package com.mousuf.rarestem.tableViewTest.dbTableView;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContrib;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel;
 import com.mousuf.rarestem.tableViewTest.Person;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -34,7 +36,7 @@ public class DBTableViewModel {
         db = client.getDatabase("rs-db");
         System.out.println("Get Database successful.");
         // get a collection instance
-        col = db.getCollection("person");
+        col = db.getCollection("user_proj");
         System.out.println("Get collection successful.");
 
     }
@@ -43,14 +45,20 @@ public class DBTableViewModel {
         List<Person> persons = new ArrayList<>();
 
         for (Document doc : col.find()) {
-            String fn = doc.getString("fn");
-            String ln = doc.getString("ln");
-            String o = doc.getString("o");
+            String fn = doc.getString("email");
+            String ln = doc.getString("project_name");
+            String o = doc.getString("projURL");
 
             persons.add(new Person(fn, ln, o));
         }
 
         return persons;
+    }
+
+    public static void main(String[] args) {
+        DBTableViewModel obj = new DBTableViewModel();
+        List<Person> persons = obj.getAllPersons();
+        persons.forEach(c -> System.out.println(c));
     }
 
     public void close() {
