@@ -48,3 +48,5 @@ public class DBTableViewModel implements Initializable {
         dbTableViewController.close();
     }
 }
+
+
