@@ -1,37 +1,37 @@
 package com.mousuf.rarestem.tableViewTest;
 
 public class Person {
-    private String firstName;
-    private String lastName;
-    private String origin;
+    private String fn;
+    private String ln;
+    private String o;
 
-    public String getFirstName() {
-        return firstName;
+    public String getFn() {
+        return fn;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFn(String fn) {
+        this.fn = fn;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLn(String ln) {
+        this.ln = ln;
     }
 
-    public void setOrigin(String origin) {
-        this.origin = origin;
+    public void setOrigin(String o) {
+        this.o = o;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLn() {
+        return ln;
     }
 
-    public String getOrigin() {
-        return origin;
+    public String getO() {
+        return o;
     }
 
-    public Person(String firstName, String lastName, String origin) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.origin = origin;
+    public Person(String fn, String ln, String o) {
+        this.fn = fn;
+        this.ln = ln;
+        this.o = o;
     }
 }

@@ -16,7 +16,7 @@ import java.io.IOException;
 public class TableViewTestView extends Application{
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/com/mousuf/rarestem/table-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("JavaFX TableView");
         stage.setScene(scene);
