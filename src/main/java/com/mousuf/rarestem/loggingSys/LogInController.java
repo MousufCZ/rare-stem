@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -27,6 +28,17 @@ public class LogInController implements Initializable {
     private TextField tf_email;
     @FXML
     private TextField tf_password;
+    @FXML
+    private TableColumn<?, ?> tc_projectDesc;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectName;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectOwner;
+
+    @FXML
+    private TableColumn<?, ?> tc_projectURL;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         button_logIn.setOnAction(new EventHandler<ActionEvent>() {
@@ -39,7 +51,7 @@ public class LogInController implements Initializable {
         button_signUp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("We are about to run signup.fxml from LogInController");
+                System.out.println("CHECK: LogInController: We are about to run signup.fxml from LogInController");
                 try {
                     LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/sign-up.fxml", "Sign Up", null);
                 } catch (MalformedURLException e) {

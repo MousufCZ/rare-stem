@@ -6,11 +6,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 
 public class LoggedInController implements Initializable {
 
@@ -19,7 +20,7 @@ public class LoggedInController implements Initializable {
     * */
 
     @FXML
-    private Label label_loggedInName;
+    private Label label_loggedInName = new Label();
     @FXML
     private Button button_viewDatasets;
     @FXML
@@ -30,9 +31,12 @@ public class LoggedInController implements Initializable {
     private Button button_logOut;
     @FXML
     private Button button_exit;
+    @FXML
+    private Button button_addProject;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         button_logOut.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -44,9 +48,38 @@ public class LoggedInController implements Initializable {
                 }
             }
         });
+
+        button_myProfile.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", email);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
     }
 
+    @Getter @Setter private String email = getEmail();
     public void setUserInformation(String email) {
+        this.email = getEmail();
+        System.out.println("CHECK: LoggedInController: running setUserInformaiton");
         label_loggedInName.setText(email);
     }
+
 }

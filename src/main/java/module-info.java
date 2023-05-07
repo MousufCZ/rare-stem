@@ -13,4 +13,7 @@ module com.mousuf.rarestem {
 
     opens com.mousuf.rarestem.loggingSys to javafx.fxml;
     exports com.mousuf.rarestem.loggingSys;
+
+    opens com.mousuf.rarestem.projContribution to javafx.fxml;
+    exports com.mousuf.rarestem.projContribution;
 }

@@ -14,6 +14,9 @@ import javafx.stage.Stage;
 
 
 import io.github.cdimascio.dotenv.Dotenv;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.bson.Document;
 import com.mongodb.MongoException;
 import com.mongodb.MongoCredential;
@@ -35,8 +38,15 @@ public class LoggingModel {
         if (email != null) {
             try {
                 root = loader.load(url);
-                LoggedInController loggedInController = loader.getController();
-                loggedInController.setUserInformation(email);
+
+/*                // Code to implement welcome page
+                URL loggiedin_url = new File("src/main/resources/com/mousuf/rarestem/logged-in.fxml").toURI().toURL();
+                root = loader.load(loggiedin_url);
+                System.out.println("CHECK: LogginModel: trying to get loggedincontroller()");*/
+/*                LoggedInController loggedInController = loader.getController();
+                loggedInController.setUserInformation(email);*/
+                //LoggedInController loggedInController = loader.getController();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -77,12 +87,12 @@ public class LoggingModel {
             //create connection to "rs-db"
             client = MongoClients.create(uri);
             db = client.getDatabase("rs-db");
+            System.out.println("Get Database successful.");
+            MongoCollection<Document> col = db.getCollection("users");
+            System.out.println("Get collection successful.");
 
-            MongoCollection<Document> col = db.getCollection("rsdb.users");
-            BasicDBObject query = new BasicDBObject();
-            query.put("email", email);
-            FindIterable<Document> iterable = col.find(query);
-            Document result = iterable.first();
+            Document query = new Document("email", email);
+            Document result = col.find(query).first();
             if(result != null){
                 System.out.println("Sign up email: " + email + " already exists.");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -92,17 +102,19 @@ public class LoggingModel {
                 // Insert new user
                 Document document = new Document("email", email)
                         .append("password", password)
-/*                        .append("first_name", firstName)
+                        .append("first_name", firstName)
                         .append("surname", surname)
-                        .append("role", role)*/
+                        .append("role", role)
                         ;
                 col.insertOne(document);
                 System.out.println("User created successfully!");
                 // Commented out for URI test
-                //changeScene(event, "logged-in.fxml", "Welcome", email);
+                changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
             }
         } catch(MongoException e){
             e.printStackTrace();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
         } finally {
             if (client != null){
                 client.close();
@@ -113,7 +125,9 @@ public class LoggingModel {
         }
     }
 
+    @Getter @Setter private String email;
     public static void logInUsers(ActionEvent event, String email, String password){
+
         MongoClient client = null;
         MongoDatabase db = null;
 
@@ -127,14 +141,12 @@ public class LoggingModel {
             //create connection to "rs-db"
             client = MongoClients.create(uri);
             db = client.getDatabase("rs-db");
-
-            // Check if user email exists
+            System.out.println("Get Database successful.");
             MongoCollection<Document> col = db.getCollection("users");
-            BasicDBObject query = new BasicDBObject();
-            query.put("email", email);
-            FindIterable<Document> iterable = col.find(query);
-            Document result = iterable.first();
+            System.out.println("Get collection successful.");
 
+            Document query = new Document("email", email);
+            Document result = col.find(query).first();
             if (result == null){
                 System.out.println("User Email: " + email + " does not exist!");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -144,7 +156,11 @@ public class LoggingModel {
                 String getPassword = result.getString("password");
                 if(password.equals(getPassword)){
                     System.out.println("User log in username and password accepted");
-                    changeScene(event, "logged-in.fxml", "Welcome", email);
+                    changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
+
+/*                    // Code to implement welcome page
+                    LoggedInController loggedInController = new LoggedInController();
+                    loggedInController.setUserInformation(email);*/
                 } else {
                     System.out.println("Password did not match");
                     Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -153,6 +169,7 @@ public class LoggingModel {
                 }
             }
         } catch (Exception e) {
+            System.out.println("CHECK: LoggingModel: Email retriving in logged in exception error");
             throw new RuntimeException(e);
         } finally {
             if (client != null){
