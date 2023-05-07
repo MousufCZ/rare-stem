@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: The table view test is working.&#10;ERR: Require database.&#10;- MCZ&#10;- 06-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewControllerSingle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: The table view test is working when retriving data from MongoDB Collection.&#10;ERR:.&#10;- MCZ&#10;- 06-05-22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +184,7 @@
       <workItem from="1682672926306" duration="386000" />
       <workItem from="1683122340838" duration="12337000" />
       <workItem from="1683191500942" duration="24264000" />
-      <workItem from="1683273874022" duration="42759000" />
+      <workItem from="1683273874022" duration="44245000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -259,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683428544219</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="UPDATED: The table view test is working when retriving data from MongoDB Collection.&#10;ERR:.&#10;- MCZ&#10;- 06-05-22">
+      <created>1683431788520</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683431788520</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +328,8 @@
     <MESSAGE value="UPDATED: User Project Contribution system is half complete. The user is able to add their data to the database. Next is to add table [designed SceneBuilder] and retrieve the data to the table. Logging System is complete.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: Using code inspo from Youtube, see view class for reference.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: The table view test is working.&#10;ERR: Require database.&#10;- MCZ&#10;- 06-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: The table view test is working.&#10;ERR: Require database.&#10;- MCZ&#10;- 06-05-22" />
+    <MESSAGE value="UPDATED: The table view test is working when retriving data from MongoDB Collection.&#10;ERR:.&#10;- MCZ&#10;- 06-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: The table view test is working when retriving data from MongoDB Collection.&#10;ERR:.&#10;- MCZ&#10;- 06-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
