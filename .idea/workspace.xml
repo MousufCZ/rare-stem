@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Contribution database builder.&#10;ERR: Data not retrieving&#10;- MCZ&#10;- 06-05-22">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModelTest.java" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModelTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +28,9 @@
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,7 +128,7 @@
       <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TableViewTestView">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DBTableViewModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel" />
       <module name="rare-stem" />
@@ -163,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjContribView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.addContrib.ProjContribView" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Main" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.addContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableViewTestView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.localTableView.TableViewTestView" />
+    <configuration name="UserContribModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.userContrib.UserContribModel" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.getContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.userContrib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TableViewTestView" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.UserContribModel" />
         <item itemvalue="Application.DBTableViewModel" />
-        <item itemvalue="Application.GetContribView" />
         <item itemvalue="Application.GetContribModel" />
-        <item itemvalue="Application.ProjContribView" />
+        <item itemvalue="Application.GetContribView" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +227,7 @@
       <workItem from="1683191500942" duration="24264000" />
       <workItem from="1683273874022" duration="44282000" />
       <workItem from="1683462114349" duration="299000" />
-      <workItem from="1683472558453" duration="2824000" />
+      <workItem from="1683472558453" duration="4826000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -329,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683472059277</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22">
+      <created>1683480035657</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683480035657</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +431,8 @@
     <MESSAGE value="UPDATED: New branch 'retrieve-db'. We will retrieve information from the database to present in a tableview.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: Seitch Controller and Model code mistake.&#10;ERR:&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: Contribution database builder.&#10;ERR: Data not retrieving&#10;- MCZ&#10;- 06-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Contribution database builder.&#10;ERR: Data not retrieving&#10;- MCZ&#10;- 06-05-22" />
+    <MESSAGE value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,7 +444,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -445,7 +458,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java</url>
-          <line>38</line>
+          <line>39</line>
           <properties class="com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel" method="getAllContribs">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

@@ -1,24 +1,25 @@
-package com.mousuf.rarestem.projContributionSys.getContrib;
+package com.mousuf.rarestem.projContributionSys.userContrib;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContrib;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel;
+import com.mousuf.rarestem.tableViewTest.Person;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mousuf.rarestem.projContributionSys.Contrib;
+import com.mousuf.rarestem.tableViewTest.Person;
+import com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel;
 import io.github.cdimascio.dotenv.Dotenv;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import javafx.fxml.FXML;
 import org.bson.Document;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class GetContribModel {
+public class UserContribModel {
     private final MongoClient client;
     private final MongoDatabase db;
     private final MongoCollection<Document> col;
 
-    public GetContribModel(){
+    public UserContribModel(){
         // Connect to MongoDB
         // Load environment variables from .env file
         Dotenv dotenv = Dotenv.load();
@@ -33,29 +34,28 @@ public class GetContribModel {
         db = client.getDatabase("rs-db");
         System.out.println("Get Database successful.");
         // get a collection instance
-        col = db.getCollection("user-proj");
+        col = db.getCollection("user_proj");
         System.out.println("Get collection successful.");
     }
 
-    public List<Contrib> getAllContribs(){
-        List<Contrib> getContribs = new ArrayList<>();
+    public List<Person> getAllContibution() {
+        List<Person> persons = new ArrayList<>();
 
         for (Document doc : col.find()) {
-            String tc_projectName = doc.getString("email");
-            String tc_projectDesc = doc.getString("project_description");
-            String tc_projectOwner = doc.getString("project_owner");
-            String tc_projectURL = doc.getString("projURL");
-            getContribs.add(new Contrib(tc_projectName, tc_projectDesc, tc_projectOwner, tc_projectURL));
+            String fn = doc.getString("email");
+            String ln = doc.getString("project_name");
+            String o = doc.getString("projURL");
+
+            persons.add(new Person(fn, ln, o));
         }
-        return getContribs;
+        return persons;
+    }
+    public static void main(String[] args) {
+        UserContribModel obj = new UserContribModel();
+        List<Person> persons = obj.getAllContibution();
+        persons.forEach(c -> System.out.println(c));
     }
     public void close() {
         client.close();
-    }
-
-    public static void main(String[] args) {
-        GetContribModel obj = new GetContribModel();
-        List<Contrib> contribs = obj.getAllContribs();
-        contribs.forEach(c -> System.out.println(c));
     }
 }

@@ -47,6 +47,6 @@ module com.mousuf.rarestem {
     exports com.mousuf.rarestem.tableViewTest.localTableView;
     opens com.mousuf.rarestem.tableViewTest.localTableView to javafx.fxml;
 
-/*    exports com.mousuf.rarestem.projContributionSys;
-    opens com.mousuf.rarestem.projContributionSys to javafx.fxml;*/
+    exports com.mousuf.rarestem.projContributionSys.userContrib;
+    opens com.mousuf.rarestem.projContributionSys.userContrib to javafx.fxml;
 }
