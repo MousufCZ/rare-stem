@@ -43,8 +43,8 @@ public void initialize(URL url, ResourceBundle resourceBundle) {
         List<Person> persons = dbTableViewModel.getAllPersons();
 
         if (table != null) {
-        System.out.println("FXCollections.observableArrayList(persons)");
-        table.setItems(FXCollections.observableArrayList(persons));
+            System.out.println("FXCollections.observableArrayList(persons)");
+            table.setItems(FXCollections.observableArrayList(persons));
         } else {
         System.out.println("table is null");
         }

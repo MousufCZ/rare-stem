@@ -1,25 +1,23 @@
-package com.mousuf.rarestem.tableViewTest.dbTableView;
-import com.mousuf.rarestem.tableViewTest.Person;
+package com.mousuf.rarestem.projContributionSys.getContrib;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mousuf.rarestem.tableViewTest.Person;
 import io.github.cdimascio.dotenv.Dotenv;
-import javafx.fxml.FXML;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.bson.Document;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class DBTableViewModel {
+public class GetContribModel {
     private final MongoClient client;
     private final MongoDatabase db;
     private final MongoCollection<Document> col;
 
-    public DBTableViewModel() {
-
+    public GetContribModel(){
         // Connect to MongoDB
         // Load environment variables from .env file
         Dotenv dotenv = Dotenv.load();
@@ -34,28 +32,24 @@ public class DBTableViewModel {
         db = client.getDatabase("rs-db");
         System.out.println("Get Database successful.");
         // get a collection instance
-        col = db.getCollection("person");
+        col = db.getCollection("user-proj");
         System.out.println("Get collection successful.");
-
     }
 
-    public List<Person> getAllPersons() {
-        List<Person> persons = new ArrayList<>();
+    public List<GetContrib> getAllContribs(){
+        List<GetContrib> getContribs = new ArrayList<>();
 
         for (Document doc : col.find()) {
-            String fn = doc.getString("fn");
-            String ln = doc.getString("ln");
-            String o = doc.getString("o");
+            String tc_projectName = doc.getString("project_name");
+            String tc_projectDesc = doc.getString("project_description");
+            String tc_projectOwner = doc.getString("project_owner");
+            String tc_projectURL = doc.getString("projURL");
 
-            persons.add(new Person(fn, ln, o));
+            getContribs.add(new GetContrib(tc_projectName, tc_projectDesc, tc_projectOwner, tc_projectURL));
         }
-
-        return persons;
+        return getContribs;
     }
-
     public void close() {
         client.close();
     }
 }
-
-

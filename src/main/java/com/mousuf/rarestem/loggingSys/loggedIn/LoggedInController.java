@@ -1,6 +1,10 @@
+
 package com.mousuf.rarestem.loggingSys.loggedIn;
 
 import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContrib;
+import com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -8,9 +12,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class LoggedInController implements Initializable {
@@ -34,21 +41,9 @@ public class LoggedInController implements Initializable {
     @FXML
     private Button button_addProject;
     // Table
-    @FXML
-    private TableColumn<?, ?> tc_projectDesc;
-
-    @FXML
-    private TableColumn<?, ?> tc_projectName;
-
-    @FXML
-    private TableColumn<?, ?> tc_projectOwner;
-
-    @FXML
-    private TableColumn<?, ?> tc_projectURL;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         button_logOut.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -84,14 +79,12 @@ public class LoggedInController implements Initializable {
                 }
             }
         });
-
     }
+}
 
-/*    @Getter @Setter private String email = getEmail();
+    /*    @Getter @Setter private String email = getEmail();
     public void setUserInformation(String email) {
         this.email = getEmail();
         System.out.println("CHECK: LoggedInController: running setUserInformaiton");
         label_loggedInName.setText(email);
     }*/
-
-}

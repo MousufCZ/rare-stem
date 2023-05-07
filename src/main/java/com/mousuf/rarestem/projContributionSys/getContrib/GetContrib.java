@@ -8,8 +8,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class GetContrib {
-    private String project_name;
-    private String project_description;
-    private String project_owner;
-    private String project_url;
+    private String tc_projectName;
+    private String tc_projectDesc;
+    private String tc_projectOwner;
+    private String tc_projectURL;
 }
