@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: FXML file path and MongoDB data retrival resolved. &#10;ERR: None.&#10;- MCZ&#10;- 04-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: User Project Contribution system is half complete. The user is able to add their data to the database. Next is to add table [designed SceneBuilder] and retrieve the data to the table. Logging System is complete.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/TableViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/TableViewTestView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +24,8 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,6 +78,9 @@
       <recent name="C:\Users\mousu\Documents\java-projects\rare-stem\src\main\resources\com\mousuf\rarestem" />
       <recent name="C:\Users\mousu\Documents\java-projects\rare-stem\src\main\java\com\mousuf\rarestem\loggingSys" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mousu\Documents\java-projects\rare-stem\src\main\resources\com\mousuf\rarestem" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.mousuf.rarestem.projContribution" />
       <recent name="com.mousuf.rarestem.contribution" />
@@ -91,22 +90,9 @@
       <recent name="com.mousuf.rarestem.Hello" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProjContribView">
+  <component name="RunManager" selected="Application.TableViewTestView">
     <configuration name="DatabaseConn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.DatabaseConn" />
-      <module name="rare-stem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoggedInView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.LoggedInView" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
@@ -144,6 +130,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TableViewTestView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.TableViewTestView" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.tableViewTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.mousuf.rarestem.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.HelloApplication" />
       <module name="rare-stem" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProjContribView" />
+        <item itemvalue="Application.TableViewTestView" />
         <item itemvalue="Application.com.mousuf.rarestem.HelloApplication" />
+        <item itemvalue="Application.ProjContribView" />
         <item itemvalue="Application.DatabaseConn" />
         <item itemvalue="Application.LoggingView" />
-        <item itemvalue="Application.LoggedInView" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +187,7 @@
       <workItem from="1682672926306" duration="386000" />
       <workItem from="1683122340838" duration="12337000" />
       <workItem from="1683191500942" duration="24264000" />
-      <workItem from="1683273874022" duration="34158000" />
+      <workItem from="1683273874022" duration="36187000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -239,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683240267712</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UPDATED: User Project Contribution system is half complete. The user is able to add their data to the database. Next is to add table [designed SceneBuilder] and retrieve the data to the table. Logging System is complete.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22">
+      <created>1683419454338</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683419454338</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +307,8 @@
     <MESSAGE value="UPDATED: LoggedInController.java, logged-in.fxml, LoggedInView edit in motion. &#10;ERR: .&#10;- MCZ&#10;- 02-05-22" />
     <MESSAGE value="UPDATED: LoggingModel.java issue. &#10;ERR: changeScene is null pointer when seeking fxml file path..&#10;- MCZ&#10;- 02-05-22" />
     <MESSAGE value="UPDATED: FXML file path and MongoDB data retrival resolved. &#10;ERR: None.&#10;- MCZ&#10;- 04-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: FXML file path and MongoDB data retrival resolved. &#10;ERR: None.&#10;- MCZ&#10;- 04-05-22" />
+    <MESSAGE value="UPDATED: User Project Contribution system is half complete. The user is able to add their data to the database. Next is to add table [designed SceneBuilder] and retrieve the data to the table. Logging System is complete.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: User Project Contribution system is half complete. The user is able to add their data to the database. Next is to add table [designed SceneBuilder] and retrieve the data to the table. Logging System is complete.&#10;ERR: None.&#10;- MCZ&#10;- 06-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -334,6 +341,10 @@
           </properties>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="27" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

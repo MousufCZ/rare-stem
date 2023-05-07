@@ -16,4 +16,7 @@ module com.mousuf.rarestem {
 
     opens com.mousuf.rarestem.projContribution to javafx.fxml;
     exports com.mousuf.rarestem.projContribution;
+
+    opens com.mousuf.rarestem.tableViewTest to javafx.fxml;
+    exports com.mousuf.rarestem.tableViewTest;
 }
