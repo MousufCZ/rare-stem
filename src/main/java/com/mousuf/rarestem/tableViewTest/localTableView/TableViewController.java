@@ -1,5 +1,6 @@
-package com.mousuf.rarestem.tableViewTest;
+package com.mousuf.rarestem.tableViewTest.localTableView;
 
+import com.mousuf.rarestem.tableViewTest.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

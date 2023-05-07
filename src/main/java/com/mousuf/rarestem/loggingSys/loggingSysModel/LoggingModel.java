@@ -1,4 +1,4 @@
-package com.mousuf.rarestem.loggingSys;
+package com.mousuf.rarestem.loggingSys.loggingSysModel;
 
 
 import com.mongodb.BasicDBObject;

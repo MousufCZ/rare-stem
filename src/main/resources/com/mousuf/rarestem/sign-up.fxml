@@ -9,13 +9,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.SignUpController">
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.signUp.SignUpController">
    <children>
-      <Button fx:id="button_register" layoutX="653.0" layoutY="526.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-cursor: hand;" text="Register">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
       <ImageView fitHeight="239.0" fitWidth="239.0" layoutX="531.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/rs-prototype-logo-full.png" />
@@ -31,6 +26,11 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="tf_firstName" alignment="CENTER" layoutX="606.0" layoutY="279.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
       <TextField fx:id="tf_surname" alignment="CENTER" layoutX="606.0" layoutY="321.0">
          <font>
             <Font size="14.0" />
@@ -41,12 +41,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="555.0" layoutY="449.0" text="Email">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="532.0" layoutY="489.0" text="Password">
+      <Label layoutX="433.0" layoutY="368.0" text="Area of interes in dataset">
          <font>
             <Font size="14.0" />
          </font>
@@ -61,11 +56,6 @@
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <Label layoutX="433.0" layoutY="368.0" text="Area of interes in dataset">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
       <TextField fx:id="tf_email" alignment="CENTER" layoutX="607.0" layoutY="444.0">
          <font>
             <Font size="14.0" />
@@ -76,12 +66,17 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="tf_firstName" alignment="CENTER" layoutX="606.0" layoutY="279.0">
+      <Label layoutX="532.0" layoutY="489.0" text="Password">
          <font>
             <Font size="14.0" />
          </font>
-      </TextField>
-      <Button fx:id="button_login" layoutX="665.0" layoutY="611.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log In" textFill="#1347b9" underline="true">
+      </Label>
+      <Label layoutX="555.0" layoutY="449.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_register" layoutX="653.0" layoutY="526.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-cursor: hand;" text="Register">
          <font>
             <Font size="14.0" />
          </font>
@@ -91,5 +86,10 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Button fx:id="button_login" layoutX="665.0" layoutY="611.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log In" textFill="#1347b9" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

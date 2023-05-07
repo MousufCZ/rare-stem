@@ -1,25 +1,21 @@
-package com.mousuf.rarestem.loggingSys;
+package com.mousuf.rarestem.projContributionSys.addContrib;
 
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.*;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoggedInController implements Initializable {
 
-    /*
-    * This is my code and I built it by learning from Java in Two Semester: Featuring JavaFX (Autor: Quentin Charatan, Kans and Springerlink (Online Service, 2019)
-    * */
-
+@Data
+public class ProjContribController implements Initializable {
     @FXML
     private Label label_loggedInName = new Label();
     @FXML
@@ -34,22 +30,29 @@ public class LoggedInController implements Initializable {
     private Button button_exit;
     @FXML
     private Button button_addProject;
-    // Table
     @FXML
-    private TableColumn<?, ?> tc_projectDesc;
+    private TextField tf_projName;
+    @FXML
+    private TextField tf_projDesc;
+    @FXML
+    private TextField tf_projOwner;
+    @FXML
+    private TextField tf_projOwnerEmail;
+    @FXML
+    private TextField tf_projURL;
 
     @FXML
-    private TableColumn<?, ?> tc_projectName;
+    private Button button_submitProject;
 
-    @FXML
-    private TableColumn<?, ?> tc_projectOwner;
+    public void clearTextField(){
+        getTf_projName().clear();
+        getTf_projDesc().clear();
+        getTf_projOwner().clear();
+        getTf_projOwnerEmail().clear();
+        getTf_projURL().clear();
+    }
 
-    @FXML
-    private TableColumn<?, ?> tc_projectURL;
-
-    @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         button_logOut.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -86,13 +89,27 @@ public class LoggedInController implements Initializable {
             }
         });
 
+        button_submitProject.setOnAction(new EventHandler<ActionEvent>() {
+            /*
+            *  .trim()
+            *  https://www.geeksforgeeks.org/java-string-trim-method-example/
+            * */
+            @Override
+            public void handle(ActionEvent event) {
+                if(!tf_projName.getText().trim().isEmpty() && !tf_projDesc.getText().trim().isEmpty() &&
+                        !tf_projOwner.getText().trim().isEmpty() && !tf_projOwnerEmail.getText().trim().isEmpty() &&
+                        !tf_projURL.getText().trim().isEmpty()){
+                    ProjContribModel.submitProjectContrib(event, tf_projName.getText(), tf_projDesc.getText(),
+                            tf_projOwner.getText(), tf_projOwnerEmail.getText(), tf_projURL.getText());
+                } else {
+                    System.out.println("All fields in registration field requires filling in");
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Please fill in all fields");
+                    alert.show();
+                }
+                //clearTextField();
+            }
+        });
+
     }
-
-/*    @Getter @Setter private String email = getEmail();
-    public void setUserInformation(String email) {
-        this.email = getEmail();
-        System.out.println("CHECK: LoggedInController: running setUserInformaiton");
-        label_loggedInName.setText(email);
-    }*/
-
 }

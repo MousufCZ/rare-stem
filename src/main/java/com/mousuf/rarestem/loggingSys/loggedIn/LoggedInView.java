@@ -1,9 +1,8 @@
-package com.mousuf.rarestem.loggingSys;
+package com.mousuf.rarestem.loggingSys.loggedIn;
 
-import com.mousuf.rarestem.HelloApplication;
+import com.mousuf.rarestem.Main;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -13,9 +12,9 @@ public class LoggedInView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         //Parent root = FXMLLoader.load(getClass().getResource("logged-in.fxml"));
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("logged-in.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("logged-in.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 700);
-        stage.setTitle("Rare Stem Prototype");
+        stage.setTitle("Welcome");
         stage.setScene(scene);
         stage.show();
     }

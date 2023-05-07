@@ -1,60 +1,56 @@
 package com.mousuf.rarestem.tableViewTest.dbTableView;
-import com.mousuf.rarestem.tableViewTest.Person;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mousuf.rarestem.tableViewTest.Person;
 import io.github.cdimascio.dotenv.Dotenv;
+import javafx.fxml.Initializable;
+import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import org.bson.Document;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-public class DBTableViewController {
-    private final MongoClient client;
-    private final MongoDatabase db;
-    private final MongoCollection<Document> col;
+import java.util.ResourceBundle;
+public class DBTableViewController implements Initializable {
+@FXML
+private TableColumn<Person, String> fn;
 
-    public DBTableViewController() {
+@FXML
+private TableColumn<Person, String> ln;
 
-        // Connect to MongoDB
-        // Load environment variables from .env file
-        Dotenv dotenv = Dotenv.load();
-        // Get the value of the API_KEY environment variable
-        String uri;
-        uri = dotenv.get("MONGODB_URI");
-        // Use the API key in your application
-        System.out.println("MongoDB URI: " + uri);
+@FXML
+private TableColumn<Person, String> o;
 
-        // create a MongoDB client
-        client = MongoClients.create(uri);
+@FXML
+public TableView<Person> table;
 
-        // get a database instance
-        db = client.getDatabase("rs-db");
-        System.out.println("Get Database successful.");
+private DBTableViewModel dbTableViewModel;
 
+@Override
+public void initialize(URL url, ResourceBundle resourceBundle) {
+        fn.setCellValueFactory(new PropertyValueFactory<Person, String>("fn"));
+        ln.setCellValueFactory(new PropertyValueFactory<Person, String>("ln"));
+        o.setCellValueFactory(new PropertyValueFactory<Person, String>("o"));
 
-        // get a collection instance
-        col = db.getCollection("person");
-        System.out.println("Get collection successful.");
+        dbTableViewModel = new DBTableViewModel();
+        List<Person> persons = dbTableViewModel.getAllPersons();
 
-    }
-
-    public List<Person> getAllPersons() {
-        List<Person> persons = new ArrayList<>();
-
-        for (Document doc : col.find()) {
-            String fn = doc.getString("fn");
-            String ln = doc.getString("ln");
-            String o = doc.getString("o");
-
-            persons.add(new Person(fn, ln, o));
+        if (table != null) {
+        System.out.println("FXCollections.observableArrayList(persons)");
+        table.setItems(FXCollections.observableArrayList(persons));
+        } else {
+        System.out.println("table is null");
+        }
         }
 
-        return persons;
-    }
-
-    public void close() {
-        client.close();
-    }
+    public void onClose() {
+        dbTableViewModel.close();
+        }
 }

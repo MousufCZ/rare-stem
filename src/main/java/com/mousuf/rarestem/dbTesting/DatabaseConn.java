@@ -1,4 +1,4 @@
-package com.mousuf.rarestem;
+package com.mousuf.rarestem.dbTesting;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.*;
 import com.mongodb.client.result.UpdateResult;

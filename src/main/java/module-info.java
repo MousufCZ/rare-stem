@@ -11,8 +11,8 @@ module com.mousuf.rarestem {
     opens com.mousuf.rarestem to javafx.fxml;
     exports com.mousuf.rarestem;
 
-    opens com.mousuf.rarestem.loggingSys to javafx.fxml;
-    exports com.mousuf.rarestem.loggingSys;
+/*    opens com.mousuf.rarestem.loggingSys to javafx.fxml;
+    exports com.mousuf.rarestem.loggingSys;*/
 
 /*    opens com.mousuf.rarestem.projContribution to javafx.fxml;
     exports com.mousuf.rarestem.projContribution;*/
@@ -23,9 +23,26 @@ module com.mousuf.rarestem {
     opens com.mousuf.rarestem.tableViewTest.dbTableView to javafx.fxml;
     exports com.mousuf.rarestem.tableViewTest.dbTableView;
 
-    exports com.mousuf.rarestem.projContribution.getContrib;
-    opens com.mousuf.rarestem.projContribution.getContrib to javafx.fxml;
+    exports com.mousuf.rarestem.projContributionSys.getContrib;
+    opens com.mousuf.rarestem.projContributionSys.getContrib to javafx.fxml;
 
-    exports com.mousuf.rarestem.projContribution.addContrib;
-    opens com.mousuf.rarestem.projContribution.addContrib to javafx.fxml;
+    exports com.mousuf.rarestem.projContributionSys.addContrib;
+    opens com.mousuf.rarestem.projContributionSys.addContrib to javafx.fxml;
+
+    exports com.mousuf.rarestem.dbTesting;
+    opens com.mousuf.rarestem.dbTesting to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.signUp;
+    opens com.mousuf.rarestem.loggingSys.signUp to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.logIn;
+    opens com.mousuf.rarestem.loggingSys.logIn to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.loggedIn;
+    opens com.mousuf.rarestem.loggingSys.loggedIn to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.loggingSysModel;
+    opens com.mousuf.rarestem.loggingSys.loggingSysModel to javafx.fxml;
+    exports com.mousuf.rarestem.tableViewTest.localTableView;
+    opens com.mousuf.rarestem.tableViewTest.localTableView to javafx.fxml;
 }

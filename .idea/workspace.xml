@@ -4,18 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: The table view test is working when retriving data from MongoDB Collection using MVC model.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/getContrib/GetContrib.java" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: New branch 'retrieve-db'. We will retrieve information from the database to present in a tableview.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dbTesting/DatabaseQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/ProjContribView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/DatabaseConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dbTesting/DatabaseConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggedInView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/LoggingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/addContrib/ProjContribView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContribution/getContrib/GetContrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/TableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/localTableView/TableViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/TableViewTestView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/localTableView/TableViewTestView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,20 +113,20 @@
       <recent name="com.mousuf.rarestem.contribution" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.mousuf.rarestem.projContribution.getContrib" />
-      <recent name="com.mousuf.rarestem.projContribution.addContrib" />
-      <recent name="com.mousuf.rarestem.projContribution" />
-      <recent name="com.mousuf.rarestem.loggingSys" />
-      <recent name="com.mousuf.rarestem" />
+      <recent name="com.mousuf.rarestem.tableViewTest.localTableView" />
+      <recent name="com.mousuf.rarestem.loggingSys.loggingSysModel" />
+      <recent name="com.mousuf.rarestem.loggingSys.lo" />
+      <recent name="com.mousuf.rarestem.loggingSys.loggedIn" />
+      <recent name="com.mousuf.rarestem.loggingSys.logIn" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.mousuf.rarestem.HelloApplication">
-    <configuration name="DatabaseConn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.DatabaseConn" />
+  <component name="RunManager" selected="Application.TableViewTestView">
+    <configuration name="LogInView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.logIn.LogInView" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.logIn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoggingView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.LoggingView" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Main" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
@@ -133,11 +148,24 @@
       </method>
     </configuration>
     <configuration name="ProjContribView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContribution.addContrib.ProjContribView" />
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.addContrib.ProjContribView" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContribution.addContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.addContrib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.loggingSys.signUp.SignupView" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.loggingSys.signUp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,24 +174,11 @@
       </method>
     </configuration>
     <configuration name="TableViewTestView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.TableViewTestView" />
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.localTableView.TableViewTestView" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.tableViewTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.mousuf.rarestem.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.HelloApplication" />
-      <module name="rare-stem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.tableViewTest.localTableView.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.mousuf.rarestem.HelloApplication" />
         <item itemvalue="Application.TableViewTestView" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ProjContribView" />
-        <item itemvalue="Application.LoggingView" />
-        <item itemvalue="Application.DatabaseConn" />
+        <item itemvalue="Application.LogInView" />
+        <item itemvalue="Application.SignupView" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683433268767</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UPDATED: New branch 'retrieve-db'. We will retrieve information from the database to present in a tableview.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22">
+      <created>1683463884775</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683463884775</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,18 +378,19 @@
     <MESSAGE value="UPDATED: The table view test is working.&#10;ERR: Require database.&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: The table view test is working when retriving data from MongoDB Collection.&#10;ERR:.&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: The table view test is working when retriving data from MongoDB Collection using MVC model.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: The table view test is working when retriving data from MongoDB Collection using MVC model.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22" />
+    <MESSAGE value="UPDATED: New branch 'retrieve-db'. We will retrieve information from the database to present in a tableview.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: New branch 'retrieve-db'. We will retrieve information from the database to present in a tableview.&#10;ERR: Switch over Contoller code with Model code, update scenebuilder fx:controller=?. I was too tired.&#10;- MCZ&#10;- 06-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java</url>
           <line>14</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/SignupView.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java</url>
           <line>13</line>
           <properties class="com.mousuf.rarestem.loggingSys.SignupView" method="start">
             <option name="EMULATED" value="true" />

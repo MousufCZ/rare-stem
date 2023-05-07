@@ -1,4 +1,4 @@
-package com.mousuf.rarestem.projContribution.getContrib;
+package com.mousuf.rarestem.projContributionSys.getContrib;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

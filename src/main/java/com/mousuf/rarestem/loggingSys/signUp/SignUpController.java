@@ -1,5 +1,6 @@
-package com.mousuf.rarestem.loggingSys;
+package com.mousuf.rarestem.loggingSys.signUp;
 
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

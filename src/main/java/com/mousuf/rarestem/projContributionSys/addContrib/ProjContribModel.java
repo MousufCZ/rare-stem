@@ -1,11 +1,10 @@
-package com.mousuf.rarestem.projContribution.addContrib;
+package com.mousuf.rarestem.projContributionSys.addContrib;
 
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mousuf.rarestem.loggingSys.LoggingModel;
 import io.github.cdimascio.dotenv.Dotenv;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
@@ -13,7 +12,7 @@ import org.bson.Document;
 
 import java.net.MalformedURLException;
 
-import static com.mousuf.rarestem.loggingSys.LoggingModel.changeScene;
+import static com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel.changeScene;
 
 public class ProjContribModel {
 
