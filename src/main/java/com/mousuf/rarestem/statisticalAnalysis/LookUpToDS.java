@@ -36,6 +36,7 @@ public class LookUpToDS {
 
     }
     public HashMap<String, ArrayList<String>> getIndividualDiseases() {
+        long startTime = System.nanoTime();
         System.out.println("Starting lookup aggregation.");
         AggregateIterable<Document> result = col.aggregate(Arrays.asList(
                 Aggregates.lookup(
@@ -58,18 +59,18 @@ public class LookUpToDS {
         int totalDocuments = 0;
         System.out.println("Processing lookup results.");
         for (Document document : result) {
-            String individualId = document.getInteger("Individual_id").toString();
-            String diseaseId = document.getInteger("disease_id").toString();
+            Integer individualId = document.getInteger("Individual_id");
+            ArrayList<Integer> diseaseIds = (ArrayList<Integer>) document.get("disease_id");
             System.out.println("COMPLETE: getInteger to toSting().");
-            //Integer diseaseId = document.getInteger("disease_id");
 
-            if (hashMap.containsKey(individualId)) {
-                hashMap.get(individualId).add(diseaseId);
-            } else {
-                ArrayList<String> diseases = new ArrayList<>();
-                diseases.add(diseaseId);
-                hashMap.put((individualId), diseases);
+            ArrayList<String> diseases = new ArrayList<>();
+            for (Integer diseaseId : diseaseIds) {
+                diseases.add(String.valueOf(diseaseId));
             }
+
+            hashMap.put(String.valueOf(individualId), diseases);
+            totalDocuments++;
+
             if (totalDocuments % 10000 == 0) {
                 System.out.println(String.format("Processed %d documents...", totalDocuments));
             }
@@ -77,9 +78,15 @@ public class LookUpToDS {
         }
         System.out.println(String.format("Processed %d documents.", totalDocuments));
         System.out.println(String.format("Total number of unique Individual_id values: %d", hashMap.size()));
+
+        long endTime = System.nanoTime();
+        long elapsedTime = endTime - startTime;
+        System.out.println("Elapsed time: " + elapsedTime + " ns");
+
+
+
         return hashMap;
     }
-
     public void processIndividualDiseases(HashMap<String, ArrayList<String>> hashMap) {
         ArrayList<String> allDiseaseIds = new ArrayList<>();
         for (ArrayList<String> diseases : hashMap.values()) {
