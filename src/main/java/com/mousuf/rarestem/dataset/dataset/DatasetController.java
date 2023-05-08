@@ -70,7 +70,7 @@ public class DatasetController implements Initializable {
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/gene.fxml", "COL1A2", null);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml", "COL1A2", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }

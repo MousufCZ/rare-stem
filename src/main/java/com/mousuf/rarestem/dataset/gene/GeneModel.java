@@ -114,7 +114,4 @@ public class GeneModel {
     public void close() {
         client.close();
     }
-
-
-
 }

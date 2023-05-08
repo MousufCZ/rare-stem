@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22">
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +226,7 @@
       <workItem from="1683462114349" duration="299000" />
       <workItem from="1683472558453" duration="9355000" />
       <workItem from="1683486959664" duration="6064000" />
-      <workItem from="1683494538756" duration="13735000" />
+      <workItem from="1683494538756" duration="16456000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -348,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683515490842</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22">
+      <created>1683515716552</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683515716552</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +454,8 @@
     <MESSAGE value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
     <MESSAGE value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
     <MESSAGE value="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22" />
+    <MESSAGE value="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -13,7 +13,7 @@ public class COL1A2 {
     private Integer effect_id;
     private Integer position_g_start;
     private Integer position_g_end;
-    private String average_frequence; // Mixed
-    private String VariantOnGenome_DBID;
-    private String VariantOnGenome_DNA;
+    private String average_frequency; // Mixed data
+    private String variantOnGenome_DBID;
+    private String variantOnGenome_DNA;
 }
