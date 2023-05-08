@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Type conversion is geetting complicated at LookUpToDS.&#10;ERR: Unable to convert getInteger to type string for arraylist.&#10;- MCZ&#10;- 08-05-22">
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpHashmapArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpTreemapLinked.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpToDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpToDS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpToDS.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,14 +121,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mousuf.rarestem.statisticalAnalysis" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.LookUpToDS">
-    <configuration name="GetContribModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel" />
+  <component name="RunManager" selected="Application.LookUpTreemapLinked">
+    <configuration name="LookUpHashmapArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.statisticalAnalysis.LookUpHashmapArray" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.getContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.statisticalAnalysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,8 +139,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LookUpToDS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.statisticalAnalysis.LookUpToDS" />
+    <configuration name="LookUpTreemapLinked" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.statisticalAnalysis.LookUpTreemapLinked" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
@@ -188,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LookUpToDS" />
+        <item itemvalue="Application.LookUpTreemapLinked" />
+        <item itemvalue="Application.LookUpHashmapArray" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.UserContribModel" />
         <item itemvalue="Application.ProjContribView" />
-        <item itemvalue="Application.GetContribModel" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +227,7 @@
       <workItem from="1683472558453" duration="9355000" />
       <workItem from="1683486959664" duration="6064000" />
       <workItem from="1683494538756" duration="17163000" />
-      <workItem from="1683550644068" duration="5129000" />
+      <workItem from="1683550644068" duration="16232000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -378,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683556889957</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22">
+      <created>1683557695523</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557695523</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +487,8 @@
     <MESSAGE value="UPDATED: Working COL1A2 TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
     <MESSAGE value="UPDATED: Successful connection to databse at LookUpToDS.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
     <MESSAGE value="UPDATED: Type conversion is geetting complicated at LookUpToDS.&#10;ERR: Unable to convert getInteger to type string for arraylist.&#10;- MCZ&#10;- 08-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Type conversion is geetting complicated at LookUpToDS.&#10;ERR: Unable to convert getInteger to type string for arraylist.&#10;- MCZ&#10;- 08-05-22" />
+    <MESSAGE value="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
