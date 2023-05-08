@@ -23,9 +23,6 @@ module com.mousuf.rarestem {
     opens com.mousuf.rarestem.tableViewTest.dbTableView to javafx.fxml;
     exports com.mousuf.rarestem.tableViewTest.dbTableView;
 
-    exports com.mousuf.rarestem.projContributionSys.getContrib;
-    opens com.mousuf.rarestem.projContributionSys.getContrib to javafx.fxml;
-
     exports com.mousuf.rarestem.projContributionSys.addContrib;
     opens com.mousuf.rarestem.projContributionSys.addContrib to javafx.fxml;
 

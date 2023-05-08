@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22">
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Working COL1A2 TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpToDS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,9 @@
         <option value="spring-beans.schema" />
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -125,13 +126,13 @@
       <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="DBTableViewModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel" />
+  <component name="RunManager" selected="Application.LookUpToDS">
+    <configuration name="GetContribModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.tableViewTest.dbTableView.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.getContrib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetContribModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel" />
+    <configuration name="LookUpToDS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.statisticalAnalysis.LookUpToDS" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.getContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.statisticalAnalysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LookUpToDS" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.UserContribModel" />
         <item itemvalue="Application.ProjContribView" />
         <item itemvalue="Application.GetContribModel" />
-        <item itemvalue="Application.DBTableViewModel" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +227,8 @@
       <workItem from="1683462114349" duration="299000" />
       <workItem from="1683472558453" duration="9355000" />
       <workItem from="1683486959664" duration="6064000" />
-      <workItem from="1683494538756" duration="16456000" />
+      <workItem from="1683494538756" duration="17163000" />
+      <workItem from="1683550644068" duration="2694000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -361,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683515716552</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="UPDATED: Working COL1A2 TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22">
+      <created>1683518292123</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683518292123</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +464,8 @@
     <MESSAGE value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
     <MESSAGE value="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22" />
     <MESSAGE value="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Working Gene TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
+    <MESSAGE value="UPDATED: Working COL1A2 TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Working COL1A2 TableView with mixed dataset.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

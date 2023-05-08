@@ -153,6 +153,5 @@ public class COL1A2Controller implements Initializable {
                 Platform.exit();
             }
         });
-
     }
 }
