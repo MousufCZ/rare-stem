@@ -4,18 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/Gene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/dataset.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/gene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/mRna.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/protein.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewFBN1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModelTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +50,10 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -74,29 +97,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "retrieve-db",
-    "last_opened_file_path": "C:/Users/mousu/Documents/java-projects/rare-stem/src/main/resources/com/mousuf/rarestem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17106551",
-    "project.structure.side.proportion": "0.5790094",
-    "settings.editor.selected.configurable": "preferences.pathVariables",
-    "spring.configuration.checksum": "9e9e14d0be7fbec51e837ff2376ccc90",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;retrieve-db&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mousu/Documents/java-projects/rare-stem/src/main/resources/com/mousuf/rarestem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17106551&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5790094&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9e9e14d0be7fbec51e837ff2376ccc90&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
@@ -118,11 +141,11 @@
       <recent name="com.mousuf.rarestem.contribution" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
+      <recent name="com.mousuf.rarestem.dataset.dataset" />
       <recent name="com.mousuf.rarestem.projContributionSys" />
+      <recent name="com.mousuf.rarestem.tableViewTest" />
+      <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
       <recent name="com.mousuf.rarestem.tableViewTest.localTableView" />
-      <recent name="com.mousuf.rarestem.loggingSys.loggingSysModel" />
-      <recent name="com.mousuf.rarestem.loggingSys.lo" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.mousuf.rarestem.projContributionSys.getContrib" />
@@ -155,12 +178,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetContribView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.getContrib.GetContribView" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Main" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.getContrib.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,12 +191,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.Main" />
+    <configuration name="ProjContribView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.addContrib.ProjContribView" />
       <module name="rare-stem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
+          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.addContrib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,9 +221,9 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.UserContribModel" />
-        <item itemvalue="Application.DBTableViewModel" />
+        <item itemvalue="Application.ProjContribView" />
         <item itemvalue="Application.GetContribModel" />
-        <item itemvalue="Application.GetContribView" />
+        <item itemvalue="Application.DBTableViewModel" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +250,9 @@
       <workItem from="1683191500942" duration="24264000" />
       <workItem from="1683273874022" duration="44282000" />
       <workItem from="1683462114349" duration="299000" />
-      <workItem from="1683472558453" duration="4826000" />
+      <workItem from="1683472558453" duration="9355000" />
+      <workItem from="1683486959664" duration="6064000" />
+      <workItem from="1683494538756" duration="13624000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -341,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683480035657</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22">
+      <created>1683482323317</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683482323317</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +464,8 @@
     <MESSAGE value="UPDATED: Seitch Controller and Model code mistake.&#10;ERR:&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: Contribution database builder.&#10;ERR: Data not retrieving&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
+    <MESSAGE value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -441,11 +474,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java</url>
           <line>14</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java</url>
@@ -457,17 +485,8 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java</url>
-          <line>39</line>
-          <properties class="com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel" method="getAllContribs">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java</url>
-          <line>43</line>
+          <line>42</line>
           <properties class="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel" method="getAllPersons">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

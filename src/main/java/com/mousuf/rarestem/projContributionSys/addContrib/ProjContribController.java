@@ -2,6 +2,7 @@ package com.mousuf.rarestem.projContributionSys.addContrib;
 
 
 import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -21,9 +22,9 @@ public class ProjContribController implements Initializable {
     @FXML
     private Button button_viewDatasets;
     @FXML
-    private Button button_myProfile;
+    private Button button_home;
     @FXML
-    private Button button_myActivity;
+    private Button button_userProjects;
     @FXML
     private Button button_logOut;
     @FXML
@@ -65,7 +66,7 @@ public class ProjContribController implements Initializable {
             }
         });
 
-        button_myProfile.setOnAction(new EventHandler<ActionEvent>() {
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
@@ -110,6 +111,37 @@ public class ProjContribController implements Initializable {
                 //clearTextField();
             }
         });
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "View Dataset", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
 
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "View Dataset", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_logOut: Closing connection");
+                System.out.println("LoggedInController#button_logOut: About to close the application");
+                Platform.exit();
+            }
+        });
     }
 }

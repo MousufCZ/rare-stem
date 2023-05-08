@@ -1,6 +1,5 @@
 package com.mousuf.rarestem.tableViewTest.dbTableView;
-import com.mousuf.rarestem.projContributionSys.getContrib.GetContrib;
-import com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel;
+
 import com.mousuf.rarestem.tableViewTest.Person;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

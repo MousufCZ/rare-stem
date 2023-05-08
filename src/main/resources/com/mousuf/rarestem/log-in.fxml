@@ -34,11 +34,6 @@
                   <Font size="14.0" />
                </font>
             </Button>
-              <Button fx:id="button_forgotPassword" layoutX="579.0" layoutY="421.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Forgot password" underline="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
               <Button fx:id="button_signUp" layoutX="647.0" layoutY="391.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up!" textFill="#1224c6">
                <font>
                   <Font size="14.0" />
@@ -49,6 +44,21 @@
                   <Font size="14.0" />
                </font>
             </Label>
+            <Button fx:id="button_aboutUs" layoutX="538.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="About Us" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_contactUs" layoutX="616.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Contact Us" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_exit" layoutX="705.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
           </children>
       
                   </AnchorPane>

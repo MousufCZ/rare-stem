@@ -38,15 +38,6 @@ public class LoggingModel {
         if (email != null) {
             try {
                 root = loader.load(url);
-
-/*                // Code to implement welcome page
-                URL loggiedin_url = new File("src/main/resources/com/mousuf/rarestem/logged-in.fxml").toURI().toURL();
-                root = loader.load(loggiedin_url);
-                System.out.println("CHECK: LogginModel: trying to get loggedincontroller()");*/
-/*                LoggedInController loggedInController = loader.getController();
-                loggedInController.setUserInformation(email);*/
-                //LoggedInController loggedInController = loader.getController();
-
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -126,7 +117,7 @@ public class LoggingModel {
     }
 
     @Getter @Setter private String email;
-    public static void logInUsers(ActionEvent event, String email, String password){
+    public static void logInUsers(ActionEvent event, String email, String password) {
 
         MongoClient client = null;
         MongoDatabase db = null;
@@ -147,20 +138,16 @@ public class LoggingModel {
 
             Document query = new Document("email", email);
             Document result = col.find(query).first();
-            if (result == null){
+            if (result == null) {
                 System.out.println("User Email: " + email + " does not exist!");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("This user does not exist.");
                 alert.show();
-            } else{
+            } else {
                 String getPassword = result.getString("password");
-                if(password.equals(getPassword)){
+                if (password.equals(getPassword)) {
                     System.out.println("User log in username and password accepted");
                     changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
-
-/*                    // Code to implement welcome page
-                    LoggedInController loggedInController = new LoggedInController();
-                    loggedInController.setUserInformation(email);*/
                 } else {
                     System.out.println("Password did not match");
                     Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -172,11 +159,12 @@ public class LoggingModel {
             System.out.println("CHECK: LoggingModel: Email retriving in logged in exception error");
             throw new RuntimeException(e);
         } finally {
-            if (client != null){
+            if (client != null) {
                 client.close();
             }
         }
     }
+
 }
 
 

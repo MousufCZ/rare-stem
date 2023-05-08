@@ -49,4 +49,19 @@ module com.mousuf.rarestem {
 
     exports com.mousuf.rarestem.projContributionSys.userContrib;
     opens com.mousuf.rarestem.projContributionSys.userContrib to javafx.fxml;
+
+    exports com.mousuf.rarestem.projContributionSys;
+    opens com.mousuf.rarestem.projContributionSys to javafx.fxml;
+
+    exports com.mousuf.rarestem.dataset;
+    opens com.mousuf.rarestem.dataset to javafx.fxml;
+
+    exports com.mousuf.rarestem.dataset.dataset;
+    opens com.mousuf.rarestem.dataset.dataset to javafx.fxml;
+
+    exports com.mousuf.rarestem.dataset.gene;
+    opens com.mousuf.rarestem.dataset.gene to javafx.fxml;
+
+    exports com.mousuf.rarestem.dataset.col1a2;
+    opens com.mousuf.rarestem.dataset.col1a2 to javafx.fxml;
 }

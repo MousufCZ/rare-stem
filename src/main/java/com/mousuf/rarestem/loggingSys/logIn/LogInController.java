@@ -1,6 +1,7 @@
 package com.mousuf.rarestem.loggingSys.logIn;
 
 import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -17,6 +18,12 @@ public class LogInController implements Initializable {
     private Button button_logIn;
     @FXML
     private Button button_signUp;
+    @FXML
+    private Button button_aboutUs;
+    @FXML
+    private Button button_contactUs;
+    @FXML
+    private Button button_exit;
     @FXML
     private TextField tf_email;
     @FXML
@@ -40,6 +47,37 @@ public class LogInController implements Initializable {
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
+            }
+        });
+
+        button_aboutUs.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("CHECK: LogInController: We are about to run signup.fxml from LogInController");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/sign-up.fxml", "Sign Up", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_contactUs.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("CHECK: LogInController: We are about to run signup.fxml from LogInController");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/sign-up.fxml", "Sign Up", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_logOut: About to close the application");
+                Platform.exit();
             }
         });
 

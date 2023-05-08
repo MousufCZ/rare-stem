@@ -1,17 +1,14 @@
 package com.mousuf.rarestem.projContributionSys.userContrib;
-import com.mousuf.rarestem.projContributionSys.getContrib.GetContrib;
-import com.mousuf.rarestem.projContributionSys.getContrib.GetContribModel;
-import com.mousuf.rarestem.tableViewTest.Person;
+import com.mousuf.rarestem.projContributionSys.Contrib;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mousuf.rarestem.tableViewTest.Person;
-import com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel;
 import io.github.cdimascio.dotenv.Dotenv;
-import javafx.fxml.FXML;
 import org.bson.Document;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 public class UserContribModel {
@@ -38,24 +35,25 @@ public class UserContribModel {
         System.out.println("Get collection successful.");
     }
 
-    public List<Person> getAllContibution() {
-        List<Person> persons = new ArrayList<>();
+    public List<Contrib> getAllContibution() throws MalformedURLException {
+        List<Contrib> persons = new ArrayList<>();
 
         for (Document doc : col.find()) {
-            String fn = doc.getString("email");
-            String ln = doc.getString("project_name");
-            String o = doc.getString("projURL");
-
-            persons.add(new Person(fn, ln, o));
+            String projectName = doc.getString("project_name");
+            String projectDesc = doc.getString("project_description");
+            String projectOwner = doc.getString("project_owner");
+            String email = doc.getString("email");
+            persons.add(new Contrib(projectName, projectDesc, projectOwner, email));
         }
         return persons;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
         UserContribModel obj = new UserContribModel();
-        List<Person> persons = obj.getAllContibution();
+        List<Contrib> persons = obj.getAllContibution();
         persons.forEach(c -> System.out.println(c));
     }
     public void close() {
         client.close();
+
     }
 }

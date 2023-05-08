@@ -1,58 +1,81 @@
-
-package com.mousuf.rarestem.loggingSys.loggedIn;
+package com.mousuf.rarestem.dataset.dataset;
 
 import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
-public class LoggedInController implements Initializable {
-
-    /*
-    * This is my code and I built it by learning from Java in Two Semester: Featuring JavaFX (Autor: Quentin Charatan, Kans and Springerlink (Online Service, 2019)
-    * */
+public class DatasetController implements Initializable {
 
     @FXML
-    private Button button_viewDatasets;
+    private Button button_gene;
     @FXML
-    private Button button_home;
+    private Button button_viewFBN1;
     @FXML
-    private Button button_userProjects;
+    private Button button_viewCOL1A2;
+
     @FXML
-    private Button button_logOut;
+    private Button button_addProject;
+
     @FXML
     private Button button_exit;
     @FXML
-    private Button button_addProject;
-    // Table
+    private Button button_home;
+
+    @FXML
+    private Button button_logOut;
+
+
+    @FXML
+    private Button button_userProjects;
+
+
+    @FXML
+    private Button button_viewDatasets;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+       button_gene.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("We are about to run log-in.fxml from LoggedInController");
+                System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/gene.fxml", "Gene Datasets", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
             }
         });
-
+        button_viewFBN1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/gene.fxml", "FBN1", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_viewCOL1A2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LoggedInController#button_MyProfile: About to initiate addProject EventHandling");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/gene.fxml", "COL1A2", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
         button_home.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -64,7 +87,6 @@ public class LoggedInController implements Initializable {
                 }
             }
         });
-
         button_addProject.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -82,7 +104,7 @@ public class LoggedInController implements Initializable {
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "Add Project", null);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Contributions", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -94,7 +116,18 @@ public class LoggedInController implements Initializable {
             public void handle(ActionEvent event) {
                 System.out.println("LoggedInController#button_addProject: About to initiate addProject EventHandling");
                 try {
-                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Add Project", null);
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Datasets", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("We are about to run log-in.fxml from LoggedInController");
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -109,5 +142,6 @@ public class LoggedInController implements Initializable {
                 Platform.exit();
             }
         });
+
     }
 }
