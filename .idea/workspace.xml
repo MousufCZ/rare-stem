@@ -4,41 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/Gene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneContoller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/dataset.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/gene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/mRna.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/protein.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewFBN1.fxml" afterDir="false" />
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContrib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/getContrib/GetContribView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +220,7 @@
       <workItem from="1683462114349" duration="299000" />
       <workItem from="1683472558453" duration="9355000" />
       <workItem from="1683486959664" duration="6064000" />
-      <workItem from="1683494538756" duration="13624000" />
+      <workItem from="1683494538756" duration="13735000" />
     </task>
     <task id="LOCAL-00001" summary="Environment set up with Maven Dependencies on a JavaFX Project file.&#10;- Mousuf C Zaman&#10;- 27-04-22">
       <created>1682615739940</created>
@@ -373,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683482323317</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22">
+      <created>1683515490842</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683515490842</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +440,8 @@
     <MESSAGE value="UPDATED: Contribution database builder.&#10;ERR: Data not retrieving&#10;- MCZ&#10;- 06-05-22" />
     <MESSAGE value="UPDATED: TableViewTest system can retrieve GetContrib, not sure why. lets find out.&#10;ERR: Database working, not the GetContrib Model and controller.&#10;- MCZ&#10;- 07-05-22" />
     <MESSAGE value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: It worked when rebuilt in new system.&#10;ERR: Database working, creating new Model and controller.&#10;- MCZ&#10;- 07-05-22" />
+    <MESSAGE value="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Building Gene TableView.&#10;ERR: Mixed data issues.&#10;- MCZ&#10;- 08-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

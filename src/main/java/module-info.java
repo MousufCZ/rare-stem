@@ -53,8 +53,10 @@ module com.mousuf.rarestem {
     exports com.mousuf.rarestem.projContributionSys;
     opens com.mousuf.rarestem.projContributionSys to javafx.fxml;
 
+/*
     exports com.mousuf.rarestem.dataset;
     opens com.mousuf.rarestem.dataset to javafx.fxml;
+*/
 
     exports com.mousuf.rarestem.dataset.dataset;
     opens com.mousuf.rarestem.dataset.dataset to javafx.fxml;
