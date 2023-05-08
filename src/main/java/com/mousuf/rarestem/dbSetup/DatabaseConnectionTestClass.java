@@ -1,15 +1,9 @@
-package com.mousuf.rarestem.dbTesting;
-import com.mongodb.BasicDBObject;
+package com.mousuf.rarestem.dbSetup;
 import com.mongodb.client.*;
-import com.mongodb.client.result.UpdateResult;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.bson.Document;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class DatabaseConn {
+public class DatabaseConnectionTestClass {
     public static void main( String[] args ) {
     /*
      * Credential protection of MongoDB Connection URI with the

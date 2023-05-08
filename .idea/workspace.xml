@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpHashmapArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpTreemapLinked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpToDS.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +120,20 @@
       <recent name="com.mousuf.rarestem.statisticalAnalysis" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LookUpTreemapLinked">
+  <component name="RunManager" selected="Application.DatabaseQuery">
+    <configuration name="DatabaseQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.dbSetup.DatabaseQuery" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.dbSetup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LookUpHashmapArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.statisticalAnalysis.LookUpHashmapArray" />
       <module name="rare-stem" />
@@ -165,19 +173,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjContribView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.addContrib.ProjContribView" />
-      <module name="rare-stem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.projContributionSys.addContrib.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserContribModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projContributionSys.userContrib.UserContribModel" />
       <module name="rare-stem" />
@@ -193,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseQuery" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.LookUpTreemapLinked" />
         <item itemvalue="Application.LookUpHashmapArray" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.UserContribModel" />
-        <item itemvalue="Application.ProjContribView" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +496,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java</url>
           <line>13</line>
-          <properties class="com.mousuf.rarestem.loggingSys.signUp.SignupView" method="start">
+          <properties class="com.mousuf.rarestem.loggingSys.signUp.SignupView">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -510,7 +505,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java</url>
           <line>42</line>
-          <properties class="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel" method="getAllPersons">
+          <properties class="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewModel">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -519,7 +514,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java</url>
           <line>36</line>
-          <properties class="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewController" method="initialize">
+          <properties class="com.mousuf.rarestem.tableViewTest.dbTableView.DBTableViewController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

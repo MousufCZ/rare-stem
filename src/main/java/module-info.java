@@ -26,8 +26,8 @@ module com.mousuf.rarestem {
     exports com.mousuf.rarestem.projContributionSys.addContrib;
     opens com.mousuf.rarestem.projContributionSys.addContrib to javafx.fxml;
 
-    exports com.mousuf.rarestem.dbTesting;
-    opens com.mousuf.rarestem.dbTesting to javafx.fxml;
+    exports com.mousuf.rarestem.dbSetup;
+    opens com.mousuf.rarestem.dbSetup to javafx.fxml;
 
     exports com.mousuf.rarestem.loggingSys.signUp;
     opens com.mousuf.rarestem.loggingSys.signUp to javafx.fxml;
