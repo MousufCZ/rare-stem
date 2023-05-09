@@ -1,8 +1,12 @@
 package com.mousuf.rarestem.loggingSys.loggingSysModel;
 
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.client.*;
+import com.mongodb.MongoException;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,26 +14,32 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
-
-
-
-import io.github.cdimascio.dotenv.Dotenv;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.bson.Document;
-import com.mongodb.MongoException;
-import com.mongodb.MongoCredential;
-import com.mongodb.ConnectionString;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/*
+ * Credential protection of MongoDB Connection URI with the
+ * use of enviorment viarble file .env, and the use of
+ * dotenv-java to recall the config file variable. The reuse
+ * of code are from https://github.com/cdimascio/dotenv-java/
+ *
+ * These are my code, code inspired and reused from YoutTube Tutorial:
+ * WittCode (2021). JavaFX Login and Signup Form with Database Connection. [online] YouTube.
+ * Available at: https://www.youtube.com/watch?v=ltX5AtW9v30&t=2582s [Accessed 22 Apr. 2023].
+ *
+ * in addition, 5 lines in user signup and 4 in logIn users are reuse
+ * */
+
 public class LoggingModel {
     /*
-    * Faced location null exception
+    * See backlog id: blog.003
+    * Urgent change of Sting email for future iteration.
     * */
     public static void changeScene(ActionEvent event, String fxmlFile, String title, String email) throws MalformedURLException {
         Parent root = null;
@@ -55,13 +65,6 @@ public class LoggingModel {
         stage.show();
     }
 
-    /*
-    * ========================================================
-    * I used the MongoDB setup code DatabaseConn.java.
-    * I build a dummy User Database with email and password.
-    * ========================================================
-    * */
-
     public static void signUpUser(ActionEvent event, String email, String password,
                                   String firstName, String surname, String role){
 
@@ -72,25 +75,18 @@ public class LoggingModel {
             Dotenv dotenv = Dotenv.load();
             String uri;
             uri = dotenv.get("MONGODB_URI");
-            // Use the API key in your application
-            System.out.println("MongoDB URI: " + uri);
 
-            //create connection to "rs-db"
             client = MongoClients.create(uri);
             db = client.getDatabase("rs-db");
-            System.out.println("Get Database successful.");
             MongoCollection<Document> col = db.getCollection("users");
-            System.out.println("Get collection successful.");
 
             Document query = new Document("email", email);
             Document result = col.find(query).first();
             if(result != null){
-                System.out.println("Sign up email: " + email + " already exists.");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("This email is already take.");
                 alert.show();
             } else{
-                // Insert new user
                 Document document = new Document("email", email)
                         .append("password", password)
                         .append("first_name", firstName)
@@ -98,8 +94,6 @@ public class LoggingModel {
                         .append("role", role)
                         ;
                 col.insertOne(document);
-                System.out.println("User created successfully!");
-                // Commented out for URI test
                 changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
             }
         } catch(MongoException e){
@@ -116,7 +110,6 @@ public class LoggingModel {
         }
     }
 
-    @Getter @Setter private String email;
     public static void logInUsers(ActionEvent event, String email, String password) {
 
         MongoClient client = null;
@@ -126,27 +119,26 @@ public class LoggingModel {
             Dotenv dotenv = Dotenv.load();
             String uri;
             uri = dotenv.get("MONGODB_URI");
-            // Use the API key in your application
-            System.out.println("MongoDB URI: " + uri);
+            System.out.println("LoggingModel#logInUser: MongoDB URI: " + uri);
 
-            //create connection to "rs-db"
             client = MongoClients.create(uri);
             db = client.getDatabase("rs-db");
-            System.out.println("Get Database successful.");
+            System.out.println("LoggingModel#logInUser: Get Database successful.");
+
             MongoCollection<Document> col = db.getCollection("users");
-            System.out.println("Get collection successful.");
+            System.out.println("LoggingModel#logInUser: Get collection successful.");
 
             Document query = new Document("email", email);
             Document result = col.find(query).first();
             if (result == null) {
-                System.out.println("User Email: " + email + " does not exist!");
+                System.out.println("LoggingModel#logInUser: User Email: " + email + " does not exist!");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("This user does not exist.");
                 alert.show();
             } else {
                 String getPassword = result.getString("password");
                 if (password.equals(getPassword)) {
-                    System.out.println("User log in username and password accepted");
+                    System.out.println("LoggingModel#logInUser: User log in username and password accepted");
                     changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
                 } else {
                     System.out.println("Password did not match");
@@ -156,7 +148,7 @@ public class LoggingModel {
                 }
             }
         } catch (Exception e) {
-            System.out.println("CHECK: LoggingModel: Email retriving in logged in exception error");
+            System.out.println("LoggingModel#logInUser: Email retrieving in logged in exception error");
             throw new RuntimeException(e);
         } finally {
             if (client != null) {
@@ -164,7 +156,6 @@ public class LoggingModel {
             }
         }
     }
-
 }
 
 

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.logIn.LogInController">
+<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.logInController.LogInController">
    <children>
       <AnchorPane prefHeight="700.0" prefWidth="1280.0">
           <children>
@@ -44,17 +44,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="button_aboutUs" layoutX="538.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="About Us" underline="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="button_contactUs" layoutX="616.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Contact Us" underline="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="button_exit" layoutX="705.0" layoutY="645.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true">
+            <Button fx:id="button_exit" layoutX="622.0" layoutY="617.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true">
                <font>
                   <Font size="14.0" />
                </font>

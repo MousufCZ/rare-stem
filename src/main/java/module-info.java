@@ -7,60 +7,39 @@ module com.mousuf.rarestem {
     requires org.mongodb.driver.sync.client;
     requires io.github.cdimascio.dotenv.java;
 
-
     opens com.mousuf.rarestem to javafx.fxml;
     exports com.mousuf.rarestem;
 
-/*    opens com.mousuf.rarestem.loggingSys to javafx.fxml;
-    exports com.mousuf.rarestem.loggingSys;*/
+    exports com.mousuf.rarestem.projectContributionSys.addContribution;
+    opens com.mousuf.rarestem.projectContributionSys.addContribution to javafx.fxml;
 
-/*    opens com.mousuf.rarestem.projContribution to javafx.fxml;
-    exports com.mousuf.rarestem.projContribution;*/
+    exports com.mousuf.rarestem.dbCollectionChecker;
+    opens com.mousuf.rarestem.dbCollectionChecker to javafx.fxml;
 
-    opens com.mousuf.rarestem.tableViewTest to javafx.fxml;
-    exports com.mousuf.rarestem.tableViewTest;
+    exports com.mousuf.rarestem.loggingSys.signUpController;
+    opens com.mousuf.rarestem.loggingSys.signUpController to javafx.fxml;
 
-    opens com.mousuf.rarestem.tableViewTest.dbTableView to javafx.fxml;
-    exports com.mousuf.rarestem.tableViewTest.dbTableView;
+    exports com.mousuf.rarestem.loggingSys.logInController;
+    opens com.mousuf.rarestem.loggingSys.logInController to javafx.fxml;
 
-    exports com.mousuf.rarestem.projContributionSys.addContrib;
-    opens com.mousuf.rarestem.projContributionSys.addContrib to javafx.fxml;
-
-    exports com.mousuf.rarestem.dbSetup;
-    opens com.mousuf.rarestem.dbSetup to javafx.fxml;
-
-    exports com.mousuf.rarestem.loggingSys.signUp;
-    opens com.mousuf.rarestem.loggingSys.signUp to javafx.fxml;
-
-    exports com.mousuf.rarestem.loggingSys.logIn;
-    opens com.mousuf.rarestem.loggingSys.logIn to javafx.fxml;
-
-    exports com.mousuf.rarestem.loggingSys.loggedIn;
-    opens com.mousuf.rarestem.loggingSys.loggedIn to javafx.fxml;
+    exports com.mousuf.rarestem.loggingSys.loggedInController;
+    opens com.mousuf.rarestem.loggingSys.loggedInController to javafx.fxml;
 
     exports com.mousuf.rarestem.loggingSys.loggingSysModel;
     opens com.mousuf.rarestem.loggingSys.loggingSysModel to javafx.fxml;
 
-    exports com.mousuf.rarestem.tableViewTest.localTableView;
-    opens com.mousuf.rarestem.tableViewTest.localTableView to javafx.fxml;
+    exports com.mousuf.rarestem.projectContributionSys.userContribution;
+    opens com.mousuf.rarestem.projectContributionSys.userContribution to javafx.fxml;
 
-    exports com.mousuf.rarestem.projContributionSys.userContrib;
-    opens com.mousuf.rarestem.projContributionSys.userContrib to javafx.fxml;
+    exports com.mousuf.rarestem.projectContributionSys;
+    opens com.mousuf.rarestem.projectContributionSys to javafx.fxml;
 
-    exports com.mousuf.rarestem.projContributionSys;
-    opens com.mousuf.rarestem.projContributionSys to javafx.fxml;
+    exports com.mousuf.rarestem.datasetSys.datasetController;
+    opens com.mousuf.rarestem.datasetSys.datasetController to javafx.fxml;
 
-/*
-    exports com.mousuf.rarestem.dataset;
-    opens com.mousuf.rarestem.dataset to javafx.fxml;
-*/
+    exports com.mousuf.rarestem.datasetSys.gene;
+    opens com.mousuf.rarestem.datasetSys.gene to javafx.fxml;
 
-    exports com.mousuf.rarestem.dataset.dataset;
-    opens com.mousuf.rarestem.dataset.dataset to javafx.fxml;
-
-    exports com.mousuf.rarestem.dataset.gene;
-    opens com.mousuf.rarestem.dataset.gene to javafx.fxml;
-
-    exports com.mousuf.rarestem.dataset.col1a2;
-    opens com.mousuf.rarestem.dataset.col1a2 to javafx.fxml;
+    exports com.mousuf.rarestem.datasetSys.col1a2;
+    opens com.mousuf.rarestem.datasetSys.col1a2 to javafx.fxml;
 }
