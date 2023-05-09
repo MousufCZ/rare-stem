@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="">
+    <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="UPDATED: Tried implementing maven shade, it did not work. So let's commit and move on to another attempt. See Documentation 09/05/2023.&#10;ERR: maven-shade-plugin has detected that some class files are present in two or more JARs.&#10;- MCZ&#10;- 09-05-22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/mainExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/MainExe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683557695523</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="UPDATED: Tried implementing maven shade, it did not work. So let's commit and move on to another attempt. See Documentation 09/05/2023.&#10;ERR: maven-shade-plugin has detected that some class files are present in two or more JARs.&#10;- MCZ&#10;- 09-05-22">
+      <created>1683624712034</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683624712034</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +499,8 @@
     <MESSAGE value="UPDATED: Successful connection to databse at LookUpToDS.&#10;ERR: &#10;- MCZ&#10;- 08-05-22" />
     <MESSAGE value="UPDATED: Type conversion is geetting complicated at LookUpToDS.&#10;ERR: Unable to convert getInteger to type string for arraylist.&#10;- MCZ&#10;- 08-05-22" />
     <MESSAGE value="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Implementing start and stop time to measure Time compexity.&#10;- MCZ&#10;- 08-05-22" />
+    <MESSAGE value="UPDATED: Tried implementing maven shade, it did not work. So let's commit and move on to another attempt. See Documentation 09/05/2023.&#10;ERR: maven-shade-plugin has detected that some class files are present in two or more JARs.&#10;- MCZ&#10;- 09-05-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED: Tried implementing maven shade, it did not work. So let's commit and move on to another attempt. See Documentation 09/05/2023.&#10;ERR: maven-shade-plugin has detected that some class files are present in two or more JARs.&#10;- MCZ&#10;- 09-05-22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
