@@ -96,7 +96,7 @@ public class GeneModel {
                 position_g_mrna_end = doc.getString("position_g_mrna_end");
             }
 
-            genes.add(new Gene(gene_id, gene_type, name, ncbi_mRna_id, id_protein_ncbi,
+            genes.add(new Gene (gene_id, gene_type, name, ncbi_mRna_id, id_protein_ncbi,
                     position_c_mrna_start, position_c_mrna_end, position_c_cds_end,
                     position_g_mrna_start, position_g_mrna_end));
         }

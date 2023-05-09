@@ -13,7 +13,7 @@ This method is reused from when Javafx project is created. This includes 2 lines
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("logged-in.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("log-in.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 700);
         stage.setTitle("Rare Stem Prototype");
         stage.setScene(scene);

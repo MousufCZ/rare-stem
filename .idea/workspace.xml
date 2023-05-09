@@ -5,56 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f2098b9-9c51-4aa1-a152-166a8001ca15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/mainExe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/col1a2/COL1A2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/col1a2/COL1A2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/col1a2/COL1A2Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/col1a2/COL1A2Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/dataset/DatasetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/datasetController/DatasetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/Gene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/Gene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dataset/gene/GeneView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dbSetup/DatabaseConnectionTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dbCollectionChecker/DBCollectionTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/dbSetup/DatabaseQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logInController/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/logIn/LogInView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedInController/LoggedInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggedIn/LoggedInView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/loggingSysModel/LoggingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUpController/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/loggingSys/signUp/SignupView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/Contrib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projectContributionSys/Contribution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projectContributionSys/addContribution/ProjectContributionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projectContributionSys/addContribution/ProjectContributionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/addContrib/ProjContribView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projectContributionSys/userContribution/UserContributionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projContributionSys/userContrib/UserContribModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/projectContributionSys/userContribution/UserContributionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpHashmapArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/timeComplexityStatisticalAnalysisSys/LookUpHashmapArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/statisticalAnalysis/LookUpTreemapLinked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/timeComplexityStatisticalAnalysisSys/LookUpTreemapLinked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewControllerSingle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/dbTableView/DBTableViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/localTableView/TableViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/tableViewTest/localTableView/TableViewTestView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/dataset.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/dataset.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/gene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/gene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/log-in.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/logged-in.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/mRna.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/proj-contrib.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/protein.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/sign-up.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/table-view-sample-test.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/user-contributions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mousuf/rarestem/viewFBN1.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mousuf/rarestem/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/datasetSys/gene/GeneModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/mainExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mousuf/rarestem/MainExe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +45,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="final-refactoring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,16 +77,16 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "final-refactoring",
+    "git-widget-placeholder": "exe-new-approach",
     "last_opened_file_path": "C:/Users/mousu/Documents/java-projects/rare-stem/src/main/resources/com/mousuf/rarestem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.17106551",
-    "project.structure.side.proportion": "0.5790094",
+    "project.structure.side.proportion": "0.34568965",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "9e9e14d0be7fbec51e837ff2376ccc90",
     "vue.rearranger.settings.migration": "true"
@@ -171,7 +126,13 @@
       <recent name="com.mousuf.rarestem.statisticalAnalysis" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.mainExe">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MainExe">
     <configuration name="LookUpHashmapArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.timeComplexityStatisticalAnalysisSys.LookUpHashmapArray" />
       <module name="rare-stem" />
@@ -211,6 +172,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainExe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.MainExe" />
+      <module name="rare-stem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mousuf.rarestem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserContributionModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.projectContributionSys.userContribution.UserContributionModel" />
       <module name="rare-stem" />
@@ -224,24 +198,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainExe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mousuf.rarestem.mainExe" />
-      <module name="rare-stem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mousuf.rarestem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mainExe" />
-        <item itemvalue="Application.UserContributionModel" />
+        <item itemvalue="Application.MainExe" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.UserContributionModel" />
         <item itemvalue="Application.LookUpHashmapArray" />
         <item itemvalue="Application.LookUpTreemapLinked" />
       </list>
