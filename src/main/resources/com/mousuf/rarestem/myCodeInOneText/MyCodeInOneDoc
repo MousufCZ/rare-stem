@@ -1,0 +1,2895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.datasetSys.col1a2.COL1A2Controller">
+    <children>
+        <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+                <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rs-prototype-logo-full.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+                <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+                <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+                <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+                <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+            <children>
+                <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <TableView fx:id="tableCOL1A2" layoutX="21.0" layoutY="26.0" prefHeight="399.0" prefWidth="1027.0">
+                                    <columns>
+                                        <TableColumn fx:id="col_variants_on_genome_id" prefWidth="150.4000244140625" text="variants_on_genome_id" />
+                                        <TableColumn fx:id="col_chromosome" prefWidth="83.20001220703125" text="chromosome" />
+                                        <TableColumn fx:id="col_effect_id" minWidth="0.0" prefWidth="68.800048828125" text="effect_id" />
+                                        <TableColumn fx:id="col_position_g_start" minWidth="0.0" prefWidth="116.0" text="position_g_start" />
+                                        <TableColumn fx:id="col_position_g_end" prefWidth="124.0" text="position_g_end" />
+                                        <TableColumn fx:id="col_average_frequency" minWidth="0.0" prefWidth="137.0" text="average_frequency" />
+                                        <TableColumn fx:id="col_variantOnGenome_DBID" prefWidth="178.0" text="VariantOnGenome_DBID" />
+                                        <TableColumn fx:id="col_variantOnGenome_DNA" prefWidth="170.0" text="VariantOnGenome_DNA" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                    <top>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="463.0" layoutY="73.0" prefHeight="27.0" prefWidth="145.0" text="COL1A2 Dataset">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                </BorderPane>
+            </children></AnchorPane>
+    </children>
+</HBox>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.projectContributionSys.userContribution.UserContributionController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+            <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rs-prototype-logo-full.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+            <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+            <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+            <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+            <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+         <children>
+            <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="tableContrib" layoutX="61.0" layoutY="26.0" prefHeight="399.0" prefWidth="960.0">
+                          <columns>
+                              <TableColumn fx:id="col_projectName" prefWidth="151.0" text="Project Name" />
+                              <TableColumn fx:id="col_projectOwner" prefWidth="138.0" text="Project Owner" />
+                              <TableColumn fx:id="col_projectDesc" minWidth="0.0" prefWidth="524.0" text="Project Description" />
+                              <TableColumn fx:id="col_projectGetInTouch" minWidth="0.0" prefWidth="146.0" text="Get in touch" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="478.0" layoutY="71.0" prefHeight="27.0" prefWidth="115.0" text="User Projects">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="279.0" layoutY="112.0" prefHeight="17.0" prefWidth="512.0" text="Check out our user project repositories. Feel free to contact the project owners if you can help." />
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children></AnchorPane>
+   </children>
+</HBox>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.signUpController.SignUpController">
+   <children>
+      <ImageView fitHeight="239.0" fitWidth="239.0" layoutX="531.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/rs-prototype-logo-full.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="620.0" layoutY="230.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="284.0" text="First name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_firstName" alignment="CENTER" layoutX="606.0" layoutY="279.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_surname" alignment="CENTER" layoutX="606.0" layoutY="321.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="534.0" layoutY="326.0" text="Surname">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="368.0" text="Area of interes in dataset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButton_technical" layoutX="620.0" layoutY="368.0" mnemonicParsing="false" text="Technical">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton_researcher" layoutX="620.0" layoutY="404.0" mnemonicParsing="false" text="Researcher">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="tf_email" alignment="CENTER" layoutX="607.0" layoutY="444.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_password" alignment="CENTER" layoutX="606.0" layoutY="484.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="532.0" layoutY="489.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="449.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_register" layoutX="653.0" layoutY="526.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-cursor: hand;" text="Register">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="634.0" layoutY="591.0" prefWidth="119.0" text="Already signed up?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_login" layoutX="665.0" layoutY="611.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log In" textFill="#1347b9" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.projectContributionSys.addContribution.ProjectContributionController">
+    <children>
+        <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rs-prototype-logo-full.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="label_loggedInName" layoutX="38.0" layoutY="189.0" prefHeight="25.0" prefWidth="128.0" textAlignment="CENTER">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+                <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+                <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+                <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+                <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+                <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+         <children>
+            <BorderPane layoutX="-2.0" prefHeight="700.0" prefWidth="1062.0">
+               <top>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="TOP_CENTER" layoutX="481.0" layoutY="100.0" text="Add Project" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="200.0" layoutY="135.0" prefHeight="25.0" prefWidth="663.0" text="Our community of computer scientist use our datasets for various uses. Add your project and ask the community for help." textAlignment="JUSTIFY">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane fx:id="ta_projDesc" prefHeight="500.0" prefWidth="877.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="314.0" layoutY="39.0" text="Your e-mail">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="319.0" layoutY="74.0" text="Your name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="304.0" layoutY="109.0" text="Project name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="164.0" layoutY="142.0" text="Short Description and required help">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="314.0" layoutY="177.0" text="Project URL">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_projOwnerEmail" layoutX="413.0" layoutY="36.0" prefHeight="25.0" prefWidth="366.0" promptText="Same one used in Rare Stem Registration" />
+                        <TextField fx:id="tf_projOwner" layoutX="413.0" layoutY="71.0" prefHeight="25.0" prefWidth="366.0" />
+                        <TextField fx:id="tf_projName" layoutX="413.0" layoutY="106.0" prefHeight="25.0" prefWidth="366.0" />
+                        <TextField fx:id="tf_projDesc" layoutX="413.0" layoutY="139.0" prefHeight="25.0" prefWidth="366.0" />
+                        <TextField fx:id="tf_projURL" layoutX="414.0" layoutY="174.0" prefHeight="25.0" prefWidth="366.0" promptText="Git repo" />
+                        <Button fx:id="button_submitProject" layoutX="636.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="Submit Project" />
+                     </children>
+                  </AnchorPane>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children></AnchorPane>
+    </children>
+</HBox>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.loggedInController.LoggedInController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+            <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rs-prototype-logo-full.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_loggedInName" layoutX="42.0" layoutY="198.0" prefHeight="25.0" prefWidth="128.0" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+            <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+            <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+            <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+            <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+         <children>
+            <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </children></AnchorPane>
+   </children>
+</HBox>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.logInController.LogInController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1280.0">
+          <children>
+              <ImageView fx:id="imgView_homepageLogo" fitHeight="239.0" fitWidth="239.0" layoutX="521.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/rs-prototype-logo-full.png" />
+                  </image>
+            </ImageView>
+              <TextField fx:id="tf_email" alignment="CENTER" layoutX="555.0" layoutY="270.0" promptText="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+              <PasswordField fx:id="tf_password" alignment="CENTER" layoutX="555.0" layoutY="309.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="button_logIn" layoutX="611.0" layoutY="351.0" mnemonicParsing="false" text="Log In">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+              <Button fx:id="button_signUp" layoutX="647.0" layoutY="391.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up!" textFill="#1224c6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="554.0" layoutY="396.0" text="Not registered?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_exit" layoutX="622.0" layoutY="617.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+          </children>
+
+                  </AnchorPane>
+   </children>
+</HBox>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.datasetSys.gene.GeneContoller">
+    <children>
+        <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+                <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rs-prototype-logo-full.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+                <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+                <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+                <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+                <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+            <children>
+                <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <TableView fx:id="tableGene" layoutX="21.0" layoutY="26.0" prefHeight="399.0" prefWidth="1027.0">
+                                    <columns>
+                                        <TableColumn fx:id="col_gene_id" prefWidth="60.0" text="gene_id" />
+                                        <TableColumn fx:id="col_gene_type" prefWidth="82.0" text="gene_type" />
+                                        <TableColumn fx:id="col_name" minWidth="0.0" prefWidth="61.0" text="name" />
+                                        <TableColumn fx:id="col_ncbi_mRna_id" minWidth="0.0" prefWidth="94.0" text="ncbi_mRna_id" />
+                              <TableColumn fx:id="col_id_protein_ncbi" prefWidth="105.0" text="id_protein_ncbi" />
+                              <TableColumn fx:id="col_position_c_mrna_start" minWidth="0.0" prefWidth="133.0" text="position_c_mrna_start" />
+                              <TableColumn fx:id="col_position_c_mrna_end" prefWidth="130.0" text="position_c_mrna_end" />
+                              <TableColumn fx:id="col_position_c_cds_end" prefWidth="116.0" text="position_c_cds_end" />
+                              <TableColumn fx:id="col_position_g_mrna_start" prefWidth="132.0" text="position_g_mrna_start" />
+                              <TableColumn fx:id="col_position_g_mrna_end" prefWidth="113.0" text="position_g_mrna_end" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                    <top>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="477.0" layoutY="73.0" prefHeight="27.0" prefWidth="117.0" text="Gene Dataset">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                </BorderPane>
+            </children></AnchorPane>
+    </children>
+</HBox>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.datasetSys.datasetController.DatasetController">
+    <children>
+        <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+                <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rs-prototype-logo-full.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+                <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+                <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+                <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+                <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+            <children>
+                <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+                    <center>
+                        <AnchorPane prefHeight="242.0" prefWidth="356.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="156.0" layoutY="75.0" prefHeight="27.0" prefWidth="74.0" text="Datasets">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button_gene" layoutX="290.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Gene" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_viewCOL1A2" layoutX="286.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View COL1A2" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                        </AnchorPane>
+                    </center>
+                    <top>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="478.0" layoutY="71.0" prefHeight="27.0" prefWidth="128.0" text="Select Dataset">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="477.0" layoutY="109.0" text="Rare Disease Datasets" />
+                            </children>
+                        </AnchorPane>
+                    </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </left>
+                </BorderPane>
+            </children></AnchorPane>
+    </children>
+
+</HBox>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mousuf.rarestem.loggingSys.loggedInController.LoggedInController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="button_home" layoutX="57.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Home" underline="true" />
+            <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="30.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rs-prototype-logo-full.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_loggedInName" layoutX="42.0" layoutY="198.0" prefHeight="25.0" prefWidth="128.0" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_logOut" layoutX="43.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log Out" underline="true" />
+            <Button fx:id="button_userProjects" layoutX="57.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="User Projects" underline="true" />
+            <Button fx:id="button_viewDatasets" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="View Datasets" underline="true" />
+            <Button fx:id="button_exit" layoutX="117.0" layoutY="656.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Exit" underline="true" />
+            <Button fx:id="button_addProject" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Add Project" underline="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="1049.0">
+         <children>
+            <BorderPane layoutX="1.0" prefHeight="700.0" prefWidth="1070.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </children></AnchorPane>
+   </children>
+</HBox>
+
+import os
+import pytesseract
+from PIL import Image
+
+# set the path to the directory containing image files
+dir_path = 'C:/Users/mousu/Desktop/imageToText'
+
+# set the path to the Tesseract executable
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\mousu\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+
+# create the "convertedToText" subdirectory if it doesn't exist
+text_dir = os.path.join(dir_path, 'convertedToText')
+if not os.path.exists(text_dir):
+    os.makedirs(text_dir)
+
+# loop through all image files in the directory
+for filename in os.listdir(dir_path):
+    if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.jpeg'):
+        # load the image using PIL (Python Imaging Library)
+        image_path = os.path.join(dir_path, filename)
+        image = Image.open(image_path)
+
+        # perform OCR using Pytesseract
+        text = pytesseract.image_to_string(image, lang='eng',
+                                           config='--psm 4 --oem 3')
+
+        # save the extracted text to a separate text file with the same name as the image
+        text_filename = os.path.splitext(filename)[0] + '.txt'
+        text_path = os.path.join(text_dir, text_filename)
+        with open(text_path, 'w') as f:
+            f.write(text)
+
+import os
+
+def create_tree_structure(path, output_file, level=0):
+    with open(output_file, 'a') as f:
+        f.write('|  ' * level + '|--' + os.path.basename(path) + '\n')
+    if os.path.isdir(path):
+        for file in os.listdir(path):
+            create_tree_structure(os.path.join(path, file), output_file, level + 1)
+
+# Change path for folder to get strucutre from
+folder_path = 'C:/Users/mousu/Desktop/mvc-edit-cgpt'
+# Chage path to desired text file output
+output_file_path = 'C:/Users/mousu/Desktop/final-project-line-count/datastr.txt'
+if not os.path.exists(output_file_path):
+    os.mkdir(output_file_path)
+create_tree_structure(folder_path, output_file_path)
+
+import os
+
+def count_lines(file_path):
+    with open(file_path, 'r') as f:
+        return sum(1 for line in f)
+
+def create_tree_structure(path, output_file, level=0):
+    total_lines = 0
+    with open(output_file, 'a') as f:
+        f.write('|  ' * level + '|--' + os.path.basename(path) + '\n')
+    if os.path.isdir(path):
+        for file in os.listdir(path):
+            file_path = os.path.join(path, file)
+            if os.path.isdir(file_path):
+                total_lines += create_tree_structure(file_path, output_file, level + 1)
+            elif file.endswith(('.java', '.xml', '.fxml')):
+                lines = open(file_path, 'r', encoding='utf-8').readlines()
+                line_count = len(lines)
+                total_lines += line_count
+                with open(output_file, 'a') as f:
+                    f.write('|  ' * (level + 1) + '|--' + file + ' ' + str(line_count) + ' lines of code\n')
+    return total_lines
+
+folder_path = 'C:/Users/mousu/Desktop/line-count-test'
+output_file_path = 'C:/Users/mousu/Desktop/rare-stem-line-count.txt'
+
+with open(output_file_path, 'w') as f:
+    f.write('Folder structure for ' + folder_path + '\n\n')
+
+total_lines = create_tree_structure(folder_path, output_file_path)
+
+with open(output_file_path, 'a') as f:
+    f.write('\nTotal lines of code written: ' + str(total_lines))
+
+import csv
+import json
+
+csv_file_path = "C:/Users/mousu/Desktop/text_file.csv"
+json_file_path = "C:/Users/mousu/Desktop/output.json"
+
+data = {}
+
+with open(csv_file_path) as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    count = 1
+    for rows in csv_reader:
+        id = str(count)
+        data[id] = {}
+        data[id]["symbol"] = rows["symbol"]
+        data[id]["name"] = rows["name"]
+        data[id]["inheritance"] = rows["inheritance"]
+        data[id]["id_omim"] = rows["id_omim"]
+        data[id]["tissues"] = rows["tissues"]
+        data[id]["features"] = rows["features"]
+        data[id]["remarks"] = rows["remarks"]
+        data[id]["created_by"] = rows["created_by"]
+        data[id]["created_date"] = rows["created_date"]
+        data[id]["edited_by"] = rows["edited_by"]
+        data[id]["edited_date"] = rows["edited_date"]
+        count += 1
+
+with open(json_file_path, "w") as json_file:
+    json.dump(data, json_file, indent=4)
+
+'''
+This is my own code:
+I used the following libraries used to help me buiold the code:
+https://docs.python.org/3/library/csv.html
+https://docs.python.org/3/library/json.html
+https://docs.python.org/3/library/os.html
+https://docs.python.org/3/library/secrets.html
+https://www.geeksforgeeks.org/linked-lists-python/
+https://realpython.com/linked-lists-python/
+https://www.askpython.com/python/list/convert-list-to-json
+https://stackoverflow.com/questions/3171470/python-convert-linked-list-to-json
+'''
+
+import csv
+import json
+import os
+import secrets
+import datetime
+
+# path to the folder that contains the texot files
+txt_folder_path = "C:/Users/mousu/Desktop/rs-database-creation/textToCSV/"
+
+# Define a dictionary to store the mapping of column values to OID values
+column_oid_map = {}
+
+# list of columns that should be treated as oid
+oid_columns = ["gene_id", "mRNA_id", "protien_id", "Individual_id", "COL1A2_disease_type_id", "individual_id",
+               "disease_id", "screening_id", "variants_on_genome_id", "variants_on_transcripts_id",
+               "transcript_id", "FBN1_disease_type_id", "edited_by", "user_id", "staff_id"]
+
+# list of columns that should be treated as timestamps
+timestamp_columns = ["created_date", "edited_date","signup_date"]
+
+# list of columns that should be treated as int32
+int32_columns = ["position_c_mrna_start", "position_c_mrna_end", "position_c_cds_end", "position_g_mrna_start",
+                 "position_g_mrna_end", "Owned_by", "Individual_id", "mRNA_id", "protien_id", "gene_id",
+                 "created_by", "edited_by","COL1A2_disease_type_id", "individual_id", "disease_id", "screening_id",
+                 "variants_on_genome_id", "allele", "effect_id", "chromosome", "position_g_start",
+                 "position_g_end", "VariantOnGenome_VIP", "position_c_start", "position_c_start_intron", "position_c_end",
+                 "position_c_end_intron", "user_id", "staff_id"]
+
+# list of columns that should be treated as float
+float_columns = ["average_frequency"]
+
+# list of columns that should be treated as boolean
+bool_columns = ["approved_for_db_edit", "approved_for_db_edit", "newsletter", "admin"]
+
+for txt_file_name in os.listdir(txt_folder_path):
+    if txt_file_name.endswith(".txt"):
+        txt_file_path = os.path.join(txt_folder_path, txt_file_name)
+        json_file_path = os.path.join(txt_folder_path, txt_file_name.replace(".txt", ".json"))
+
+
+        data = {}
+        with open(txt_file_path, "r") as txt_file:
+            txt_reader = csv.DictReader(txt_file, delimiter='\t')
+            count = 1
+            for row in txt_reader:
+                id = str(count)
+                data[id] = {"_id": count}
+                for key, value in row.items():
+                    if not value:
+                        continue
+                    if key in oid_columns:
+                        if value in column_oid_map:
+                            oid_value = column_oid_map[value]
+                        else:
+                            oid_value = secrets.token_hex(12)
+                            column_oid_map[value] = oid_value
+                        data[id][f"{key}_oid"] = {"$oid": oid_value}
+                        data[id][key] = value
+                    elif key in timestamp_columns:
+                        try:
+                            timestamp = datetime.datetime.strptime(value, "%d-%m-%Y %H:%M")
+                            data[id][key] = {"$date": timestamp.isoformat()}
+                        except ValueError:
+                            continue
+                    elif key in int32_columns:
+                        data[id][key] = {"$numberInt": value}
+                    elif key in float_columns:
+                        data[id][key] = {"$numberDouble": value}
+                    elif key in bool_columns:
+                        if value.lower() == "true":
+                            data[id][key] = True
+                        elif value.lower() == "false":
+                            data[id][key] = False
+                    else:
+                        data[id][key] = value
+                count += 1
+
+        with open(json_file_path, "w") as json_file:
+            json.dump(data, json_file, indent=4)
+
+module com.mousuf.rarestem {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires lombok;
+    requires org.mongodb.driver.core;
+    requires org.mongodb.bson;
+    requires org.mongodb.driver.sync.client;
+    requires io.github.cdimascio.dotenv.java;
+
+    opens com.mousuf.rarestem to javafx.fxml;
+    exports com.mousuf.rarestem;
+
+    exports com.mousuf.rarestem.projectContributionSys.addContribution;
+    opens com.mousuf.rarestem.projectContributionSys.addContribution to javafx.fxml;
+
+    exports com.mousuf.rarestem.dbCollectionChecker;
+    opens com.mousuf.rarestem.dbCollectionChecker to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.signUpController;
+    opens com.mousuf.rarestem.loggingSys.signUpController to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.logInController;
+    opens com.mousuf.rarestem.loggingSys.logInController to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.loggedInController;
+    opens com.mousuf.rarestem.loggingSys.loggedInController to javafx.fxml;
+
+    exports com.mousuf.rarestem.loggingSys.loggingSysModel;
+    opens com.mousuf.rarestem.loggingSys.loggingSysModel to javafx.fxml;
+
+    exports com.mousuf.rarestem.projectContributionSys.userContribution;
+    opens com.mousuf.rarestem.projectContributionSys.userContribution to javafx.fxml;
+
+    exports com.mousuf.rarestem.projectContributionSys;
+    opens com.mousuf.rarestem.projectContributionSys to javafx.fxml;
+
+    exports com.mousuf.rarestem.datasetSys.datasetController;
+    opens com.mousuf.rarestem.datasetSys.datasetController to javafx.fxml;
+
+    exports com.mousuf.rarestem.datasetSys.gene;
+    opens com.mousuf.rarestem.datasetSys.gene to javafx.fxml;
+
+    exports com.mousuf.rarestem.datasetSys.col1a2;
+    opens com.mousuf.rarestem.datasetSys.col1a2 to javafx.fxml;
+}
+
+package com.mousuf.rarestem.datasetSys.datasetController;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/*
+* These are my codes
+* */
+
+public class DatasetController implements Initializable {
+
+    @FXML
+    private Button button_gene;
+    @FXML
+    private Button button_viewCOL1A2;
+    @FXML
+    private Button button_addProject;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_viewDatasets;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+       button_gene.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/gene.fxml", "Gene Datasets", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_viewCOL1A2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/viewCOL1A2.fxml", "COL1A2", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Contributions", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Datasets", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.datasetSys.col1a2;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+* These are all my code.
+* */
+
+public class COL1A2Model {
+    private final MongoClient client;
+    private final MongoDatabase db;
+    private final MongoCollection<Document> col;
+    public COL1A2Model(){
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        client = MongoClients.create(uri);
+        db = client.getDatabase("rs-db");
+        col = db.getCollection("COL1A2_variants_on_genome");
+    }
+    /*
+    * Used ArrayList Documentation to understand how it works.
+    * https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+    * https://www.javatpoint.com/java-string-valueof
+    * */
+    public List<COL1A2>getAllCOL1A2(){
+        List<COL1A2> cOL1A2Collection = new ArrayList<>();
+        for (Document doc : col.find()){
+            Integer variants_on_genome_id = null;
+            Integer chromosome = null;
+            Integer effect_id = null;
+            Integer position_g_start = null;
+            Integer position_g_end = null;
+            String average_frequency = null; // mixed data
+            String variantOnGenome_DBID = null;
+            String variantOnGenome_DNA = null;
+
+            variants_on_genome_id = doc.getInteger("variants_on_genome_id");
+            chromosome = doc.getInteger("chromosome");
+            effect_id = doc.getInteger("effect_id");
+            position_g_start = doc.getInteger("position_g_start");
+            position_g_end = doc.getInteger("position_g_end");
+
+            Object value = doc.get("average_frequency");
+            if (value instanceof Integer) {
+                average_frequency = String.valueOf(doc.getInteger("average_frequency"));
+            } else if (value instanceof String) {
+                average_frequency = doc.getString("average_frequency");
+            }
+
+            variantOnGenome_DBID = doc.getString("VariantOnGenome_DBID");
+            variantOnGenome_DNA = doc.getString("VariantOnGenome_DNA");
+
+            cOL1A2Collection.add(new COL1A2(variants_on_genome_id, chromosome,effect_id, position_g_start,
+                    position_g_end, average_frequency, variantOnGenome_DBID, variantOnGenome_DNA));
+        }
+        return cOL1A2Collection;
+    }
+    public void close() {
+        client.close();
+    }
+}
+package com.mousuf.rarestem.datasetSys.col1a2;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
+/*
+ * These are all my code.
+ * I got inspiration from YoutTube: https://www.youtube.com/watch?v=V9nDH2iBJSM&t=962s
+ * See tableViewTest package in Git repository version:
+ * Commit id: 72fb4cb3
+ * Revision no: 72fb4cb3be71151aa8e5882eabd084c472808210
+ *
+ * Degubbed code using the following documentations and forums:
+ * https://stackoverflow.com/questions/28387446/tablecolumn-not-populating-integer-values
+ * https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableColumn.html
+ * https://gist.github.com/sharifulislam52/d17b4e1654a8214046d409b0a7d63c3b
+ * https://www.youtube.com/watch?v=3tmz-0g3EPs
+ * */
+
+public class COL1A2Controller implements Initializable {
+    @FXML
+    private Button button_addProject;
+
+    @FXML
+    private Button button_exit;
+
+    @FXML
+    private Button button_home;
+
+    @FXML
+    private Button button_logOut;
+
+    @FXML
+    private Button button_userProjects;
+
+    @FXML
+    private Button button_viewDatasets;
+
+    @FXML
+    private TableColumn<COL1A2, Integer> col_chromosome;
+
+    @FXML
+    private TableColumn<COL1A2, String> col_average_frequency;
+
+    @FXML
+    private TableColumn<COL1A2, Integer> col_effect_id;
+
+    @FXML
+    private TableColumn<COL1A2, Integer> col_position_g_end;
+
+    @FXML
+    private TableColumn<COL1A2, Integer> col_position_g_start;
+
+    @FXML
+    private TableColumn<COL1A2, String> col_variantOnGenome_DBID;
+
+    @FXML
+    private TableColumn<COL1A2, String> col_variantOnGenome_DNA;
+
+    @FXML
+    private TableColumn<COL1A2, Integer> col_variants_on_genome_id;
+
+    @FXML
+    private TableView<COL1A2> tableCOL1A2;
+    private COL1A2Model cOL1A2Model;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        col_variants_on_genome_id.setCellValueFactory(new PropertyValueFactory<COL1A2, Integer>("variants_on_genome_id"));
+        col_chromosome.setCellValueFactory(new PropertyValueFactory<COL1A2, Integer>("chromosome"));
+        col_effect_id.setCellValueFactory(new PropertyValueFactory<COL1A2, Integer>("effect_id"));
+        col_position_g_start.setCellValueFactory(new PropertyValueFactory<COL1A2, Integer>("position_g_start"));
+        col_position_g_end.setCellValueFactory(new PropertyValueFactory<COL1A2, Integer>("position_g_end"));
+        col_average_frequency.setCellValueFactory(new PropertyValueFactory<COL1A2, String>("average_frequency"));
+        col_variantOnGenome_DBID.setCellValueFactory(new PropertyValueFactory<COL1A2, String>("variantOnGenome_DBID"));
+        col_variantOnGenome_DNA.setCellValueFactory(new PropertyValueFactory<COL1A2, String>("variantOnGenome_DNA"));
+
+        cOL1A2Model = new COL1A2Model();
+        List<COL1A2> cOL1A2Collection = null;
+        try {
+            cOL1A2Collection = cOL1A2Model.getAllCOL1A2();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        if (tableCOL1A2 != null) {
+            tableCOL1A2.setItems(FXCollections.observableArrayList(cOL1A2Collection));
+        } else {
+            System.out.println("table is null");
+        }
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Projects", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "View datasets", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.datasetSys.col1a2;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+/*
+ * These are all my code. Insipired by my own Team Project in Stage 2.
+ * See City GitLab repository
+ * */
+@Getter
+@Setter
+@AllArgsConstructor
+public class COL1A2 {
+    private Integer variants_on_genome_id;
+    private Integer chromosome;
+    private Integer effect_id;
+    private Integer position_g_start;
+    private Integer position_g_end;
+    private String average_frequency; // Mixed data
+    private String variantOnGenome_DBID;
+    private String variantOnGenome_DNA;
+}
+package com.mousuf.rarestem.datasetSys.gene;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+/*
+ * These are all my code. Insipired by my own Team Project in Stage 2.
+ * See City GitLab repository
+ * */
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Gene {
+    private String gene_id;
+    private String gene_type;
+    private String name;
+    private String ncbi_mRna_id;
+    private String id_protein_ncbi;
+    private String position_c_mrna_start;
+    private String position_c_mrna_end;//
+    private String position_c_cds_end;
+    private String position_g_mrna_start;//
+    private String position_g_mrna_end;//
+}
+package com.mousuf.rarestem.datasetSys.gene;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
+/*
+ * These are all my code.
+ * I got inspiration from YoutTube: https://www.youtube.com/watch?v=V9nDH2iBJSM&t=962s
+ * See tableViewTest package in Git repository version:
+ * Commit id: 72fb4cb3
+ * Revision no: 72fb4cb3be71151aa8e5882eabd084c472808210
+ *
+ * Degubbed code using the following documentations and forums:
+ * https://stackoverflow.com/questions/28387446/tablecolumn-not-populating-integer-values
+ * https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableColumn.html
+ * https://gist.github.com/sharifulislam52/d17b4e1654a8214046d409b0a7d63c3b
+ * https://www.youtube.com/watch?v=3tmz-0g3EPs
+ * */
+
+public class GeneContoller implements Initializable {
+    @FXML
+    private Button button_viewDatasets;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_addProject;
+
+    @FXML
+    private TableColumn<Gene, String> col_position_g_mrna_end;
+
+    @FXML
+    private TableColumn<Gene, String> col_gene_id;
+
+    @FXML
+    private TableColumn<Gene, String> col_gene_type;
+
+    @FXML
+    private TableColumn<Gene, String> col_id_protein_ncbi;
+
+    @FXML
+    private TableColumn<Gene, String> col_name;
+
+    @FXML
+    private TableColumn<Gene, String> col_ncbi_mRna_id;
+
+    @FXML
+    private TableColumn<Gene, String> col_position_c_mrna_end;
+
+    @FXML
+    private TableColumn<Gene, String> col_position_c_mrna_start;
+
+    @FXML
+    private TableColumn<Gene, String> col_position_c_cds_end;
+
+    @FXML
+    private TableColumn<Gene, String> col_position_g_mrna_start;
+
+    @FXML
+    private TableView<Gene> tableGene;
+    private GeneModel geneModel;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        col_gene_id.setCellValueFactory(new PropertyValueFactory<Gene, String>("gene_id"));
+        col_gene_type.setCellValueFactory(new PropertyValueFactory<Gene, String>("gene_type"));
+        col_name.setCellValueFactory(new PropertyValueFactory<Gene, String>("name"));
+        col_ncbi_mRna_id.setCellValueFactory(new PropertyValueFactory<Gene, String>("ncbi_mRna_id"));
+        col_id_protein_ncbi.setCellValueFactory(new PropertyValueFactory<Gene, String>("id_protein_ncbi"));
+        col_position_c_mrna_start.setCellValueFactory(new PropertyValueFactory<Gene, String>("position_c_mrna_start"));
+        col_position_c_mrna_end.setCellValueFactory(new PropertyValueFactory<Gene, String>("position_c_mrna_end"));
+        col_position_c_cds_end.setCellValueFactory(new PropertyValueFactory<Gene, String>("position_c_cds_end"));
+        col_position_g_mrna_start.setCellValueFactory(new PropertyValueFactory<Gene, String>("position_g_mrna_start"));
+        col_position_g_mrna_end.setCellValueFactory(new PropertyValueFactory<Gene, String>("position_g_mrna_end"));
+
+        geneModel = new GeneModel();
+        List<Gene> genes = null;
+        try {
+            genes = geneModel.getAllGene();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        if (tableGene != null) {
+            tableGene.setItems(FXCollections.observableArrayList(genes));
+        } else {
+            System.out.println("table is null");
+        }
+
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Projects", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "View Datasets", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.datasetSys.gene;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * These are all my code
+ * References for solving mixed data challenges:
+ * https://dba.stackexchange.com/questions/297854/how-does-mongodb-treat-mixed-types
+ * https://stackoverflow.com/questions/72591551/read-multiple-types-in-a-collection-using-mongodb-c-sharp-driver
+ * https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableColumn.html
+ * https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Field.html
+ * */
+
+public class GeneModel {
+    private final MongoClient client;
+    private final MongoDatabase db;
+    private final MongoCollection<Document> col;
+
+    public GeneModel(){
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        client = MongoClients.create(uri);
+        db = client.getDatabase("rs-db");
+        col = db.getCollection("gene");
+    }
+
+
+    public List<Gene> getAllGene() {
+        List<Gene> genes = new ArrayList<>();
+
+        for (Document doc : col.find()) {
+            String gene_id = null;
+            String gene_type = null;
+            String name = null;
+            String ncbi_mRna_id = null;
+            String id_protein_ncbi = null;
+            String position_c_mrna_start = null;
+            String position_c_mrna_end = null;
+            String position_c_cds_end = null;
+            String position_g_mrna_start = null;
+            String position_g_mrna_end = null;
+
+            Object value = doc.get("gene_id");
+            if (value instanceof Integer) {
+                gene_id = String.valueOf(doc.getInteger("gene_id"));
+            } else if (value instanceof String) {
+                gene_id = doc.getString("gene_id");
+            }
+
+            gene_type = doc.getString("gene_type");
+            name = doc.getString("name");
+            ncbi_mRna_id = doc.getString("ncbi_mRna_id");
+            id_protein_ncbi = doc.getString("id_protein_ncbi");
+
+            value = doc.get("position_c_mrna_start");
+            if (value instanceof Integer) {
+                position_c_mrna_start = String.valueOf(doc.getInteger("position_c_mrna_start"));
+            } else if (value instanceof String) {
+                position_c_mrna_start = doc.getString("position_c_mrna_start");
+            }
+
+            value = doc.get("position_c_mrna_end");
+            if (value instanceof Integer) {
+                position_c_mrna_end = String.valueOf(doc.getInteger("position_c_mrna_end"));
+            } else if (value instanceof String) {
+                position_c_mrna_end = doc.getString("position_c_mrna_end");
+            }
+
+            value = doc.get("position_c_cds_end");
+            if (value instanceof Integer) {
+                position_c_cds_end = String.valueOf(doc.getInteger("position_c_cds_end"));
+            } else if (value instanceof String) {
+                position_c_cds_end = doc.getString("position_c_cds_end");
+            }
+
+            value = doc.get("position_g_mrna_start");
+            if (value instanceof Integer) {
+                position_g_mrna_start = String.valueOf(doc.getInteger("position_g_mrna_start"));
+            } else if (value instanceof String) {
+                position_g_mrna_start = doc.getString("position_g_mrna_start");
+            }
+
+            value = doc.get("position_g_mrna_end");
+            if (value instanceof Integer) {
+                position_g_mrna_end = String.valueOf(doc.getInteger("position_g_mrna_end"));
+            } else if (value instanceof String) {
+                position_g_mrna_end = doc.getString("position_g_mrna_end");
+            }
+
+            genes.add(new Gene (gene_id, gene_type, name, ncbi_mRna_id, id_protein_ncbi,
+                    position_c_mrna_start, position_c_mrna_end, position_c_cds_end,
+                    position_g_mrna_start, position_g_mrna_end));
+        }
+        return genes;
+    }
+    public void close() {
+        client.close();
+    }
+}
+package com.mousuf.rarestem.dbCollectionChecker;
+import com.mongodb.client.*;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+public class DBCollectionTestClass {
+    public static void main( String[] args ) {
+    /*
+     * Credential protection of MongoDB Connection URI with the
+     * use of enviorment viarble file .env, and the use of
+     * dotenv-java to recall the config file variable. The reuse
+     * of code are from https://github.com/cdimascio/dotenv-java/
+     *
+     * Documentation rules:
+     * https://www.oracle.com/uk/technical-resources/articles/java/javadoc-tool.html
+     *
+     * The first 6 line of the code are reuse from Dotenv and MongoDb.
+     * This code is reused in all Models in each system and the two java files
+     * in timeComplexityStatisticalAnalysisSys.
+     *
+     * Every file in this project folder has further referencing in the final project
+     * writeup. See Methods, Result and Appendix.
+     *
+     * @param uri  the string to call MongoDB Connection String
+     *             URI.
+     */
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        MongoClient client = MongoClients.create(uri);
+        MongoDatabase db = client.getDatabase("rs-db");
+        MongoCollection<Document> col = db.getCollection("user_proj");
+
+        int userID = 2942;
+        //Document query = new Document("screening_id", userID);
+        Document query = new Document("email", "alisha@gmail.com");
+        Document result = col.find(query).first();
+        if (result != null) {
+            //String id = String.valueOf(result.getInteger("variant_id"));
+            String id = result.getString("projURL");
+            System.out.println("User ID: " + id);
+        } else {
+            System.out.println("User not found");
+        }
+    }
+}
+package com.mousuf.rarestem.loggingSys.signUpController;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/*
+ * These are my codes.
+ * Sign up was inspired by youtube tutorial but created by me.
+ * See documentation for further reference
+ * */
+
+public class SignUpController implements Initializable {
+    @FXML
+    private Button button_login;
+    @FXML
+    private Button button_register;
+    @FXML
+    private TextField tf_email;
+    @FXML
+    private TextField tf_password;
+    @FXML
+    private TextField tf_firstName;
+    @FXML
+    private TextField tf_surname;
+    @FXML
+    private RadioButton radioButton_technical;
+    @FXML
+    private RadioButton radioButton_researcher;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ToggleGroup toggleGroup = new ToggleGroup();
+        radioButton_technical.setToggleGroup(toggleGroup);
+        radioButton_researcher.setToggleGroup(toggleGroup);
+        radioButton_technical.setSelected(true);
+
+        button_register.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String toggleName = ((RadioButton) toggleGroup.getSelectedToggle()).getText();
+
+                if(!tf_email.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty() &&
+                        !tf_firstName.getText().trim().isEmpty() && !tf_surname.getText().trim().isEmpty()){
+                    LoggingModel.signUpUser(event, tf_email.getText(), tf_password.getText(),
+                            tf_firstName.getText(), tf_surname.getText(), toggleName);
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Please fill in all fields");
+                    alert.show();
+                }
+            }
+        });
+        button_login.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Log In", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.loggingSys.logInController;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/*
+* These are my code, code inspired from YoutTube Tutorial:
+* WittCode (2021). JavaFX Login and Signup Form with Database Connection. [online] YouTube.
+* Available at: https://www.youtube.com/watch?v=ltX5AtW9v30&t=2582s [Accessed 22 Apr. 2023].
+*
+* */
+
+public class LogInController implements Initializable {
+    @FXML
+    private Button button_logIn;
+    @FXML
+    private Button button_signUp;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private TextField tf_email;
+    @FXML
+    private TextField tf_password;
+
+    /*
+     * These are my codes.
+     * button_logIn was inspired by YouTube Tutorial but created by me. See documentation for further reference.
+     * */
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        button_logIn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                LoggingModel.logInUsers(event, tf_email.getText(), tf_password.getText());
+            }
+        });
+
+        button_signUp.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/sign-up.fxml", "Sign Up", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+
+
+    }
+}
+package com.mousuf.rarestem.loggingSys.loggingSysModel;
+
+
+import com.mongodb.MongoException;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.stage.Stage;
+import lombok.Getter;
+import lombok.Setter;
+import org.bson.Document;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+/*
+ * Credential protection of MongoDB Connection URI with the
+ * use of enviorment viarble file .env, and the use of
+ * dotenv-java to recall the config file variable. The reuse
+ * of code are from https://github.com/cdimascio/dotenv-java/
+ *
+ * These are my code, code inspired and reused from YoutTube Tutorial:
+ * WittCode (2021). JavaFX Login and Signup Form with Database Connection. [online] YouTube.
+ * Available at: https://www.youtube.com/watch?v=ltX5AtW9v30&t=2582s [Accessed 22 Apr. 2023].
+ *
+ * in addition, 5 lines in user signup and 4 in logIn users are reuse
+ * */
+
+public class LoggingModel {
+    /*
+    * See backlog id: blog.003
+    * Urgent change of Sting email for future iteration.
+    * */
+    public static void changeScene(ActionEvent event, String fxmlFile, String title, String email) throws MalformedURLException {
+        Parent root = null;
+        URL url = new File(fxmlFile).toURI().toURL();
+        FXMLLoader loader = new FXMLLoader();
+        if (email != null) {
+            try {
+                root = loader.load(url);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                root = loader.load(url);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root, 1280, 700);
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void signUpUser(ActionEvent event, String email, String password,
+                                  String firstName, String surname, String role){
+
+        MongoClient client = null;
+        MongoDatabase db = null;
+
+        try{
+            Dotenv dotenv = Dotenv.load();
+            String uri;
+            uri = dotenv.get("MONGODB_URI");
+
+            client = MongoClients.create(uri);
+            db = client.getDatabase("rs-db");
+            MongoCollection<Document> col = db.getCollection("users");
+
+            Document query = new Document("email", email);
+            Document result = col.find(query).first();
+            if(result != null){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("This email is already take.");
+                alert.show();
+            } else{
+                Document document = new Document("email", email)
+                        .append("password", password)
+                        .append("first_name", firstName)
+                        .append("surname", surname)
+                        .append("role", role)
+                        ;
+                col.insertOne(document);
+                changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
+            }
+        } catch(MongoException e){
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (client != null){
+                client.close();
+            }
+            if (db != null){
+                client.close();
+            }
+        }
+    }
+
+    public static void logInUsers(ActionEvent event, String email, String password) {
+
+        MongoClient client = null;
+        MongoDatabase db = null;
+
+        try {
+            Dotenv dotenv = Dotenv.load();
+            String uri;
+            uri = dotenv.get("MONGODB_URI");
+            System.out.println("LoggingModel#logInUser: MongoDB URI: " + uri);
+
+            client = MongoClients.create(uri);
+            db = client.getDatabase("rs-db");
+            System.out.println("LoggingModel#logInUser: Get Database successful.");
+
+            MongoCollection<Document> col = db.getCollection("users");
+            System.out.println("LoggingModel#logInUser: Get collection successful.");
+
+            Document query = new Document("email", email);
+            Document result = col.find(query).first();
+            if (result == null) {
+                System.out.println("LoggingModel#logInUser: User Email: " + email + " does not exist!");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("This user does not exist.");
+                alert.show();
+            } else {
+                String getPassword = result.getString("password");
+                if (password.equals(getPassword)) {
+                    System.out.println("LoggingModel#logInUser: User log in username and password accepted");
+                    changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", email);
+                } else {
+                    System.out.println("Password did not match");
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("The password is incorrect.");
+                    alert.show();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("LoggingModel#logInUser: Email retrieving in logged in exception error");
+            throw new RuntimeException(e);
+        } finally {
+            if (client != null) {
+                client.close();
+            }
+        }
+    }
+}
+
+package com.mousuf.rarestem.loggingSys.loggedInController;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoggedInController implements Initializable {
+
+    /*
+    * This is my code and I built it by
+    * learning from Java in Two Semester: Featuring JavaFX
+    * (Autor: Quentin Charatan, Kans and Springerlink (Online Service, 2019)
+    * These code are similar to every controller class in this project.
+    * */
+
+    @FXML
+    private Button button_viewDatasets;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_addProject;
+    // Table
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.projectContributionSys;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Contribution {
+    private String projectName;
+    private String projectDesc;
+    private String projectOwner;
+    private String email;
+}
+package com.mousuf.rarestem.projectContributionSys.userContribution;
+import com.mousuf.rarestem.projectContributionSys.Contribution;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+* These are my code
+* */
+
+public class UserContributionModel {
+    private final MongoClient client;
+    private final MongoDatabase db;
+    private final MongoCollection<Document> col;
+
+    public UserContributionModel(){
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        client = MongoClients.create(uri);
+        db = client.getDatabase("rs-db");
+        col = db.getCollection("user_proj");
+    }
+
+    public List<Contribution> getAllContibution() throws MalformedURLException {
+        List<Contribution> persons = new ArrayList<>();
+
+        for (Document doc : col.find()) {
+            String projectName = doc.getString("project_name");
+            String projectDesc = doc.getString("project_description");
+            String projectOwner = doc.getString("project_owner");
+            String email = doc.getString("email");
+            persons.add(new Contribution(projectName, projectDesc, projectOwner, email));
+        }
+        return persons;
+    }
+    public static void main(String[] args) throws MalformedURLException {
+        UserContributionModel obj = new UserContributionModel();
+        List<Contribution> persons = obj.getAllContibution();
+        persons.forEach(c -> System.out.println(c));
+    }
+
+    public void close() {
+        client.close();
+
+    }
+}
+package com.mousuf.rarestem.projectContributionSys.userContribution;
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import com.mousuf.rarestem.projectContributionSys.Contribution;
+import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
+/*
+ * These are my codes
+ * */
+
+public class UserContributionController implements Initializable {
+    @FXML
+    private Button button_viewDatasets;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_addProject;
+    @FXML
+    private TableColumn<Contribution, String> col_projectName;
+
+    @FXML
+    private TableColumn<Contribution, String> col_projectOwner;
+
+    @FXML
+    private TableColumn<Contribution, String> col_projectDesc;
+    @FXML
+    private TableColumn<Contribution, String> col_projectGetInTouch;
+
+    @FXML
+    public TableView<Contribution> tableContrib;
+
+    private UserContributionModel userContributionModel;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        col_projectName.setCellValueFactory(new PropertyValueFactory<Contribution, String>("projectName"));
+        col_projectOwner.setCellValueFactory(new PropertyValueFactory<Contribution, String>("projectOwner"));
+        col_projectDesc.setCellValueFactory(new PropertyValueFactory<Contribution, String>("projectDesc"));
+        col_projectGetInTouch.setCellValueFactory(new PropertyValueFactory<Contribution, String>("email"));
+
+        userContributionModel = new UserContributionModel();
+        List<Contribution> persons = null;
+        try {
+            persons = userContributionModel.getAllContibution();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+
+        if (tableContrib != null) {
+            tableContrib.setItems(FXCollections.observableArrayList(persons));
+        } else {
+            System.out.println("table is null");
+        }
+
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Projects", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Dataset", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                userContributionModel.close();
+                Platform.exit();
+            }
+        });
+
+    }
+
+    public void onClose() {
+        userContributionModel.close();
+    }
+}
+package com.mousuf.rarestem.projectContributionSys.addContribution;
+
+import com.mongodb.MongoException;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import io.github.cdimascio.dotenv.Dotenv;
+import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
+import org.bson.Document;
+
+import java.net.MalformedURLException;
+
+/*
+* These are all my code
+* */
+
+public class ProjectContributionModel {
+
+    public static void submitProjectContrib(ActionEvent event, String projName, String projDesc,
+                                            String projOwner, String projOwnerEmail, String projURL){
+        MongoClient client = null;
+        MongoDatabase db = null;
+
+        try{
+            Dotenv dotenv = Dotenv.load();
+            String uri;
+            uri = dotenv.get("MONGODB_URI");
+            client = MongoClients.create(uri);
+            db = client.getDatabase("rs-db");
+            MongoCollection<Document> col = db.getCollection("user_proj");
+
+            Document query = new Document("email", projOwnerEmail);
+            Document result = col.find(query).first();
+            if(result != null){
+                // Insert new project
+                Document document = new Document("email", projOwnerEmail)
+                        .append("project_name", projName)
+                        .append("project_owner", projOwner)
+                        .append("project_description", projDesc)
+                        .append("projURL", projURL);
+                col.insertOne(document);
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setContentText("Project added.");
+                alert.show();
+                // Commented out for URI test
+                LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Projects", null);
+            } else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("This email does not exist. Ensure it is the same email as you used to sign up.");
+                alert.show();
+            }
+        } catch(MongoException e){
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (client != null){
+                client.close();
+            }
+            if (db != null){
+                client.close();
+            }
+        }
+    }
+}
+package com.mousuf.rarestem.projectContributionSys.addContribution;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.fxml.Initializable;
+import lombok.Data;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/*
+ * These are my codes
+ * */
+
+@Data
+public class ProjectContributionController implements Initializable {
+    @FXML
+    private Label label_loggedInName = new Label();
+    @FXML
+    private Button button_viewDatasets;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_addProject;
+    @FXML
+    private TextField tf_projName;
+    @FXML
+    private TextField tf_projDesc;
+    @FXML
+    private TextField tf_projOwner;
+    @FXML
+    private TextField tf_projOwnerEmail;
+    @FXML
+    private TextField tf_projURL;
+
+    @FXML
+    private Button button_submitProject;
+
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+            }
+        });
+
+        button_submitProject.setOnAction(new EventHandler<ActionEvent>() {
+            /*
+            *  .trim()
+            *  https://www.geeksforgeeks.org/java-string-trim-method-example/
+            * */
+            @Override
+            public void handle(ActionEvent event) {
+                if(!tf_projName.getText().trim().isEmpty() && !tf_projDesc.getText().trim().isEmpty() &&
+                        !tf_projOwner.getText().trim().isEmpty() && !tf_projOwnerEmail.getText().trim().isEmpty() &&
+                        !tf_projURL.getText().trim().isEmpty()){
+                    ProjectContributionModel.submitProjectContrib(event, tf_projName.getText(), tf_projDesc.getText(),
+                            tf_projOwner.getText(), tf_projOwnerEmail.getText(), tf_projURL.getText());
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Please fill in all fields");
+                    alert.show();
+                }
+            }
+        });
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Dataset", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "User Projects", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+
+
+package com.mousuf.rarestem.loggingSys.loggedInController;
+
+import com.mousuf.rarestem.loggingSys.loggingSysModel.LoggingModel;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoggedInController implements Initializable {
+
+    /*
+    * This is my code and I built it by
+    * learning from Java in Two Semester: Featuring JavaFX
+    * (Autor: Quentin Charatan, Kans and Springerlink (Online Service, 2019)
+    * These code are similar to every controller class in this project.
+    * */
+
+    @FXML
+    private Button button_viewDatasets;
+    @FXML
+    private Button button_home;
+    @FXML
+    private Button button_userProjects;
+    @FXML
+    private Button button_logOut;
+    @FXML
+    private Button button_exit;
+    @FXML
+    private Button button_addProject;
+    // Table
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        button_logOut.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/log-in.fxml", "Rare Stem", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/logged-in.fxml", "Welcome", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_addProject.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/proj-contrib.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_userProjects.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/user-contributions.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_viewDatasets.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    LoggingModel.changeScene(event, "src/main/resources/com/mousuf/rarestem/dataset.fxml", "Add Project", null);
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        button_exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Platform.exit();
+            }
+        });
+    }
+}
+package com.mousuf.rarestem.timeComplexityStatisticalAnalysisSys;
+
+import com.mongodb.client.*;
+import com.mongodb.client.model.Aggregates;
+import com.mongodb.client.model.Projections;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class LookUpHashmapArray {
+    private MongoClient client;
+    private MongoDatabase db;
+    private MongoCollection<Document> col;
+
+    public LookUpHashmapArray() {
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        client = MongoClients.create(uri);
+        db = client.getDatabase("rs-db");
+        col = db.getCollection("FBN1_individuals");
+    }
+
+    /*
+     * These are my own code.
+     * Built using the code references from using the following documentation:
+     * https://mongodb.github.io/mongo-java-driver/3.6/javadoc/com/mongodb/client/AggregateIterable.html
+     * https://stackoverflow.com/questions/59517472/how-to-save-aggregateiterabledocument-values-to-a-map-in-mongodb
+     * https://mkyong.com/mongodb/java-mongodb-insert-a-document/
+     * https://www.baeldung.com/java-mongodb-insert-hashmap
+     * https://stackoverflow.com/questions/351565/system-currenttimemillis-vs-system-nanotime
+     * */
+
+    public HashMap<String, ArrayList<String>> getIndivDiseases() {
+        long startTime = System.nanoTime();
+        System.out.println("Starting lookup aggregation.");
+        AggregateIterable<Document> result = col.aggregate(Arrays.asList(
+                Aggregates.lookup(
+                        "FBN1_individuals_to_diseases",
+                        "Individual_id",
+                        "individual_id",
+                        "diseases"),
+                Aggregates.project(Projections.fields(
+                        Projections.excludeId(),
+                        Projections.include(
+                                "Individual_id"),
+                        Projections.computed(
+                                "disease_id",
+                                "$diseases.disease_id")
+                ))
+        ));
+        System.out.println("Lookup aggregation completed.");
+
+        HashMap<String, ArrayList<String>> hashMap = new HashMap<>();
+        int totalDocuments = 0;
+        System.out.println("Processing lookup results.");
+        for (Document document : result) {
+            Integer individualId = document.getInteger("Individual_id");
+            ArrayList<Integer> diseaseIds = (ArrayList<Integer>) document.get("disease_id");
+            ArrayList<String> diseases = new ArrayList<>();
+            for (Integer diseaseId : diseaseIds) {
+                diseases.add(String.valueOf(diseaseId));
+            }
+
+            hashMap.put(String.valueOf(individualId), diseases);
+            totalDocuments++;
+
+            if (totalDocuments % 10000 == 0) {
+                System.out.println(String.format("Processed %d documents...", totalDocuments));
+            }
+            totalDocuments++;
+        }
+        System.out.println(String.format("Processed %d documents.", totalDocuments));
+        System.out.println(String.format("Total number of unique Individual_id values: %d", hashMap.size()));
+
+        // Stop
+        System.out.println("Time complexity for #getIndividualDiseases, with Hashmap and Arrays.");
+        printTimeComplexty(startTime);
+        return hashMap;
+    }
+
+    public int getTotalUniDiseaseIds(HashMap<String, ArrayList<String>> hashMap) {
+        // Start for Time complexity
+        long startTime = System.nanoTime();
+        ArrayList<String> allDiseaseIds = new ArrayList<>();
+        for (ArrayList<String> diseases : hashMap.values()) {
+            allDiseaseIds.addAll(diseases);
+        }
+        // Stop
+        System.out.println("Time complexity for #getTotalUniqueDiseaseIds, with Hashmap and Arrays.");
+        printTimeComplexty(startTime);
+        return new HashSet<>(allDiseaseIds).size();
+    }
+
+    public double getAvgDiseasesPerIndiv(HashMap<String, ArrayList<String>> hashMap) {
+        // Start for Time complexity
+        long startTime = System.nanoTime();
+        int totalDiseases = 0;
+        for (ArrayList<String> diseases : hashMap.values()) {
+            totalDiseases += diseases.size();
+        }
+        System.out.println("Time complexity for #getAverageDiseasesPerIndividual, with Hashmap and Arrays.");
+        printTimeComplexty(startTime);
+        return (double) totalDiseases / hashMap.size();
+    }
+
+    public int findMaxAssocDiseases(HashMap<String, ArrayList<String>> hashMap) {
+        long startTime = System.nanoTime();
+        int maxAssociatedDiseases = 0;
+        for (ArrayList<String> diseases : hashMap.values()) {
+            if (diseases.size() > maxAssociatedDiseases) {
+                maxAssociatedDiseases = diseases.size();
+            }
+        }
+        System.out.println("Time complexity for #findMaxAssociatedDiseases, with Hashmap and Arrays.");
+        printTimeComplexty(startTime);
+        return maxAssociatedDiseases;
+    }
+
+    public ArrayList<String> findIndivWithDisease(String diseaseId, HashMap<String, ArrayList<String>> individualDiseases) {
+        long startTime = System.nanoTime();
+        ArrayList<String> individuals = new ArrayList<>();
+        for (String individualId : individualDiseases.keySet()) {
+            ArrayList<String> diseases = individualDiseases.get(individualId);
+            if (diseases.contains(diseaseId)) {
+                individuals.add(individualId);
+            }
+        }
+
+        // Bubble sort through the individuals
+        for (int i = 0; i < individuals.size() - 1; i++) {
+            for (int j = 0; j < individuals.size() - i - 1; j++) {
+                if (individuals.get(j).compareTo(individuals.get(j + 1)) > 0) {
+                    String temp = individuals.get(j);
+                    individuals.set(j, individuals.get(j + 1));
+                    individuals.set(j + 1, temp);
+                }
+            }
+        }
+
+        // Binary searching of the individuals with relation to dieaseID
+        int left = 0;
+        int right = individuals.size() - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (individuals.get(mid).equals(diseaseId)) {
+                System.out.println("Individual with disease ID " + diseaseId + ": " + individuals.get(mid));
+                return individuals;
+            } else if (individuals.get(mid).compareTo(diseaseId) < 0) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        System.out.println("No individuals with disease ID " + diseaseId + " found.");
+        System.out.println("Time complexity for #findIndividualsWithDisease, with Hashmap and Arrays.");
+        printTimeComplexty(startTime);
+        return individuals;
+    }
+
+    public void printTimeComplexty(long startTime) {
+        long endTime = System.nanoTime();
+        long elapsedTimeNs = endTime - startTime;
+        double elapsedTimeSec = elapsedTimeNs / 1_000_000_000.0;
+
+        long hours = (long) (elapsedTimeSec / 3600);
+        long minutes = (long) ((elapsedTimeSec % 3600) / 60);
+        double seconds = elapsedTimeSec % 60;
+
+        String formattedTime = String.format("%02d:%02d:%06.7f", hours, minutes, seconds);
+        System.out.println("Elapsed time: " + formattedTime);
+    }
+
+    public static void main(String[] args) {
+        LookUpHashmapArray lookUpHashmapArray = new LookUpHashmapArray();
+        HashMap<String, ArrayList<String>> individualDiseases = lookUpHashmapArray.getIndivDiseases();
+
+        int totalUniqueDiseaseIds = lookUpHashmapArray.getTotalUniDiseaseIds(individualDiseases);
+        System.out.println("Total number of unique disease_id values: " + totalUniqueDiseaseIds);
+
+        double averageDiseasesPerIndividual = lookUpHashmapArray.getAvgDiseasesPerIndiv(individualDiseases);
+        System.out.println("Average number of disease_id values per Individual_id: " + averageDiseasesPerIndividual);
+
+        int maxAssociatedDiseases = lookUpHashmapArray.findMaxAssocDiseases(individualDiseases);
+        System.out.println("Max associated diseases per individual: " + maxAssociatedDiseases);
+
+        String targetDiseaseId = "198";
+        ArrayList<String> individualsWithDisease = lookUpHashmapArray.findIndivWithDisease(targetDiseaseId, individualDiseases);
+        System.out.println("Individuals with disease " + targetDiseaseId + ": " + individualsWithDisease);
+    }
+}
+package com.mousuf.rarestem.timeComplexityStatisticalAnalysisSys;
+
+import com.mongodb.client.*;
+import com.mongodb.client.model.Aggregates;
+import com.mongodb.client.model.Projections;
+import io.github.cdimascio.dotenv.Dotenv;
+import org.bson.Document;
+
+import java.util.*;
+
+public class LookUpTreemapLinked {
+    private MongoClient client;
+    private MongoDatabase db;
+    private MongoCollection<Document> col;
+
+    public LookUpTreemapLinked() {
+        Dotenv dotenv = Dotenv.load();
+        String uri;
+        uri = dotenv.get("MONGODB_URI");
+        client = MongoClients.create(uri);
+        db = client.getDatabase("rs-db");
+        col = db.getCollection("FBN1_individuals");
+    }
+
+    /*
+     * These are my own code.
+     * Built using the code references from using the documentation used
+     * to build LookUpHashmapArray.
+     * */
+
+    public TreeMap<String, LinkedList<String>> getIndivDiseases() {
+        long startTime = System.nanoTime();
+        System.out.println("Starting lookup aggregation.");
+        AggregateIterable<Document> result = col.aggregate(Arrays.asList(
+                Aggregates.lookup(
+                        "FBN1_individuals_to_diseases",
+                        "Individual_id",
+                        "individual_id",
+                        "diseases"),
+                Aggregates.project(Projections.fields(
+                        Projections.excludeId(),
+                        Projections.include(
+                                "Individual_id"),
+                        Projections.computed(
+                                "disease_id",
+                                "$diseases.disease_id")
+                ))
+        ));
+        System.out.println("Lookup aggregation completed.");
+
+        TreeMap<String, LinkedList<String>> treeMap = new TreeMap<>();
+        int totalDocuments = 0;
+        System.out.println("Processing lookup results.");
+        for (Document document : result) {
+            Integer individualId = document.getInteger("Individual_id");
+            ArrayList<Integer> diseaseIds = (ArrayList<Integer>) document.get("disease_id");
+            LinkedList<String> diseases = new LinkedList<>();
+            for (Integer diseaseId : diseaseIds) {
+                diseases.add(String.valueOf(diseaseId));
+            }
+
+            treeMap.put(String.valueOf(individualId), diseases);
+            totalDocuments++;
+
+            if (totalDocuments % 10000 == 0) {
+                System.out.println(String.format("Processed %d documents...", totalDocuments));
+            }
+        }
+        System.out.println(String.format("Processed %d documents.", totalDocuments));
+        System.out.println(String.format("Total number of unique Individual_id values: %d", treeMap.size()));
+
+        // Stop
+        System.out.println("Time complexity for #getIndividualDiseases, with TreeMap and LinkedList.");
+        printTimeComplexty(startTime);
+        return treeMap;
+    }
+
+    public int getTotalUniDiseaseIds(TreeMap<String, LinkedList<String>> treeMap) {
+        // Start for Time complexity
+        long startTime = System.nanoTime();
+        LinkedList<String> allDiseaseIds = new LinkedList<>();
+        for (LinkedList<String> diseases : treeMap.values()) {
+            allDiseaseIds.addAll(diseases);
+        }
+        // Stop
+        System.out.println("Time complexity for #getTotalUniqueDiseaseIds, with TreeMap and LinkedList.");
+        printTimeComplexty(startTime);
+        return new HashSet<>(allDiseaseIds).size();
+    }
+
+    public double getAvgDiseasesPerIndiv(TreeMap<String, LinkedList<String>> treeMap) {
+        // Start for Time complexity
+        long startTime = System.nanoTime();
+        int totalDiseases = 0;
+        for (LinkedList<String> diseases : treeMap.values()) {
+            totalDiseases += diseases.size();
+        }
+        System.out.println("Time complexity for #getAverageDiseasesPerIndividual, with TreeMap and LinkedList.");
+        printTimeComplexty(startTime);
+        return (double) totalDiseases / treeMap.size();
+    }
+
+    public int findMaxAssocDiseases(TreeMap<String, LinkedList<String>> treeMap) {
+        long startTime = System.nanoTime();
+        int maxAssociatedDiseases = 0;
+        for (LinkedList<String> diseases : treeMap.values()) {
+            if (diseases.size() > maxAssociatedDiseases) {
+                maxAssociatedDiseases = diseases.size();
+            }
+        }
+        System.out.println("Time complexity for #findMaxAssociatedDiseases, with TreeMap and LinkedList.");
+        printTimeComplexty(startTime);
+        return maxAssociatedDiseases;
+    }
+
+    public List<String> findIndivWithDisease(String diseaseId, TreeMap<String, LinkedList<String>> individualDiseases) {
+        long startTime = System.nanoTime();
+        List<String> individuals = new LinkedList<>();
+        for (Map.Entry<String, LinkedList<String>> entry : individualDiseases.entrySet()) {
+            String individualId = entry.getKey();
+            LinkedList<String> diseases = entry.getValue();
+            if (diseases.contains(diseaseId)) {
+                individuals.add(individualId);
+            }
+        }
+
+        // Bubble sort through the individuals
+        for (int i = 0; i < individuals.size() - 1; i++) {
+            for (int j = 0; j < individuals.size() - i - 1; j++) {
+                if (individuals.get(j).compareTo(individuals.get(j + 1)) > 0) {
+                    String temp = individuals.get(j);
+                    individuals.set(j, individuals.get(j + 1));
+                    individuals.set(j + 1, temp);
+                }
+            }
+        }
+
+        // Binary searching of the individuals with relation to dieaseID
+        int left = 0;
+        int right = individuals.size() - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (individuals.get(mid).equals(diseaseId)) {
+                System.out.println("Individual with disease ID " + diseaseId + ": " + individuals.get(mid));
+                System.out.println("Time complexity for #findIndividualsWithDisease, with TreeMap and LinkedList.");
+                printTimeComplexty(startTime);
+                return individuals;
+            } else if (individuals.get(mid).compareTo(diseaseId) < 0) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        System.out.println("No individuals with disease ID " + diseaseId + " found.");
+        System.out.println("Time complexity for #findIndividualsWithDisease, with TreeMap and LinkedList.");
+        printTimeComplexty(startTime);
+        return individuals;
+    }
+
+    public void printTimeComplexty(long startTime) {
+        long endTime = System.nanoTime();
+        long elapsedTimeNs = endTime - startTime;
+        double elapsedTimeSec = elapsedTimeNs / 1_000_000_000.0;
+
+        long hours = (long) (elapsedTimeSec / 3600);
+        long minutes = (long) ((elapsedTimeSec % 3600) / 60);
+        double seconds = elapsedTimeSec % 60;
+
+        String formattedTime = String.format("%02d:%02d:%06.7f", hours, minutes, seconds);
+        System.out.println("Elapsed time: " + formattedTime);
+    }
+
+    public static void main(String[] args) {
+        LookUpTreemapLinked lookUpTreemapLinked = new LookUpTreemapLinked();
+        TreeMap<String, LinkedList<String>> individualDiseases = lookUpTreemapLinked.getIndivDiseases();
+
+        // You can then use the TreeMap containing the results as desired
+        System.out.println(individualDiseases);
+
+        int totalUniqueDiseaseIds = lookUpTreemapLinked.getTotalUniDiseaseIds(individualDiseases);
+        System.out.println("Total number of unique disease_id values: " + totalUniqueDiseaseIds);
+
+        double avgDiseasesPerIndiv = lookUpTreemapLinked.getAvgDiseasesPerIndiv(individualDiseases);
+        System.out.println("Average diseases per individual: " + avgDiseasesPerIndiv);
+
+        int maxAssociatedDiseases = lookUpTreemapLinked.findMaxAssocDiseases(individualDiseases);
+        System.out.println("Max associated diseases per individual: " + maxAssociatedDiseases);
+
+        String targetDiseaseId = "198";
+        List<String> individualsWithDisease = lookUpTreemapLinked.findIndivWithDisease(targetDiseaseId, individualDiseases);
+        System.out.println("Individuals with disease " + targetDiseaseId + ": " + individualsWithDisease);
+
+
+    }
+}
+MONGODB_URI=mongodb+srv://mousufbyae:k0VDzzU9vOGItt6n@cluster0.uuqglsd.mongodb.net/test
+
+
+
